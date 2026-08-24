@@ -1,0 +1,239 @@
+.about-section {
+  width: 100%;
+  padding: 40px 20px;
+  background: #050505;
+  box-sizing: border-box;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1050px;
+  min-height: 500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #2c2c2c;
+  animation: growAnimation 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes growAnimation {
+
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.offer-side {
+  background: #f3f1f1;
+  padding: 32px;
+  color: #080808;
+}
+
+.offer-side h2 {
+  margin: 0 0 35px;
+  font-family: Arial, sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.offer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.offer-card {
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  background: #292929;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: 0.5s ease;
+  animation: slideRight 1.5s alternate ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 9; 
+  }
+}
+
+.offer-card:hover {
+  transform: translateX(6px);
+}
+
+.offer-icon {
+  width: 52px;
+  height: 52px;
+  margin-left: 12px;
+  margin-right: 16px;
+  display: flex;
+  color: #DF9898;
+  align-items: center;
+  justify-content: center;
+  background: #92263a;
+  border-radius: 7px;
+  font-size: 21px;
+}
+
+.offer-card span {
+  font-size: 14px;
+  color: #B3B3B3;
+  font-weight: 700;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.about-side {
+  padding: 42px 32px;
+  background: #303030;
+  color: white;
+}
+
+.about-side h2 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.about-side h4 {
+  margin: 4px 0 30px;
+  font-size: 14px;
+  color: #B3B3B3;
+  font-weight: 600;
+}
+
+
+/* =========================
+   ABOUT BOX
+========================= */
+
+.about-box {
+  padding: 28px 17px;
+  background: #050505;
+  border: 1px solid #e00000;
+  border-radius: 12px;
+  box-shadow:
+    0 0 30px rgba(255, 0, 0, 0.25);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #B3B3B3;
+  animation: growAnimation 2.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.about-box p {
+  margin: 0 0 16px;
+}
+
+.about-bold {
+  font-weight: 700;
+}
+
+.red-text {
+  color: #d51f39;
+  font-weight: 700;
+}
+
+.about-italic {
+  font-style: italic;
+  margin-top: 25px ;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+  }
+
+  .offer-side,
+  .about-side {
+    padding: 30px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .about-section {
+    padding: 25px 14px;
+  }
+
+  .about-container {
+    border-radius: 20px;
+  }
+
+  .offer-side,
+  .about-side {
+    padding: 25px 18px;
+  }
+
+  .offer-side h2,
+  .about-side h2 {
+    font-size: 27px;
+  }
+
+  .offer-list {
+    gap: 15px;
+  }
+
+  .offer-card {
+    min-height: 52px;
+  }
+
+  .offer-icon {
+    width: 45px;
+    height: 45px;
+
+    margin-left: 8px;
+    margin-right: 12px;
+  }
+
+  .offer-card span {
+    font-size: 12px;
+  }
+
+  .about-box {
+    padding: 20px 14px;
+
+    font-size: 13px;
+  }
+
+}

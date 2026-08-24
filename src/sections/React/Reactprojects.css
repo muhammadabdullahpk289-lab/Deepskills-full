@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+.reactprojects-wrapper {
+  --reactprojects-bg: #000000;
+  --reactprojects-green: #8bc34a;
+
+  background: var(--reactprojects-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.reactprojects-wrapper * {
+  box-sizing: border-box;
+}
+
+.reactprojects-heading {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 800;
+  color: var(--reactprojects-green);
+  margin: 0 0 20px 0;
+}
+
+.reactprojects-image {
+  width: 100%;
+}
+
+.reactprojects-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

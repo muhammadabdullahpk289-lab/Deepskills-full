@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.pywb-wrapper {
+  --pywb-bg: #0a0710;
+  --pywb-purple: #9b3dfb;
+  --pywb-purple-light: #c084fc;
+  --pywb-text-light: #ffffff;
+  --pywb-text-muted: #a89db3;
+
+  background: var(--pywb-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 60px 50px;
+  box-sizing: border-box;
+}
+
+.pywb-wrapper * {
+  box-sizing: border-box;
+}
+
+.pywb-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--pywb-purple-light);
+  margin: 0 0 50px 0;
+}
+
+.pywb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+  column-gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pywb-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pywb-number {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--pywb-text-light);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.pywb-bar {
+  width: 3px;
+  align-self: stretch;
+  min-height: 42px;
+  background: var(--pywb-purple);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.pywb-text {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--pywb-text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .pywb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .pywb-grid {
+    grid-template-columns: 1fr;
+  }
+  .pywb-heading {
+    font-size: 1.7rem;
+  }
+}

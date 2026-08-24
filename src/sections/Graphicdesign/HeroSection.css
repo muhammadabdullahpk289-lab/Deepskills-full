@@ -1,0 +1,938 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.hero-wrapper {
+  --hero-bg: #0c0812;
+  --hero-purple: #9b3dfb;
+  --hero-purple-light: #b06bff;
+  --hero-maroon: #7a1f2b;
+  --hero-text-light: #f2f0f5;
+  --hero-text-muted: #c9c4d1;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--hero-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 70px 60px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 460px);
+
+  gap: 60px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  margin-top: -100px;
+}
+
+.hero-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+              LEFT COLUMN
+========================================= */
+
+.hero-left {
+  width: 100%;
+  max-width: 100%;
+
+  color: var(--hero-text-light);
+
+  margin-top: 100px;
+
+  min-width: 0;
+}
+
+.hero-title {
+  width: 100%;
+
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  margin: 0 0 20px;
+
+  overflow-wrap: break-word;
+}
+
+.hero-highlight {
+  color: var(--hero-purple-light);
+}
+
+.hero-subtitles {
+  width: 100%;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  margin: 0 0 24px;
+
+  color: var(--hero-text-light);
+
+  overflow-wrap: break-word;
+}
+
+.hero-divider {
+  width: 100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  margin-bottom: 24px;
+}
+
+.hero-paragraph {
+  width: 100%;
+
+  font-size: 0.95rem;
+
+  line-height: 1.75;
+
+  color: var(--hero-text-muted);
+
+  margin: 0 0 18px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+              START BUTTON
+========================================= */
+
+.hero-btn-start {
+  margin-top: 12px;
+
+  background: var(--hero-purple);
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 36px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(155, 61, 251, 0.35);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-btn-start:hover {
+  background: var(--hero-purple-light);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(155, 61, 251, 0.5);
+}
+
+.hero-btn-start:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+              RIGHT COLUMN
+========================================= */
+
+.hero-right {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+
+/* =========================================
+                CARD
+========================================= */
+
+.hero-card {
+  position: relative;
+
+  width: 100%;
+  max-width: 450px;
+
+  /*
+    IMPORTANT:
+    Fixed height remove kar di.
+    Card content ke according height lega.
+  */
+  height: auto;
+  min-height: 500px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.5);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.hero-card:hover {
+  transform: perspective(900px) rotateX(2deg) rotateY(2deg) translateY(-5px);
+
+  box-shadow:
+    0 35px 75px rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================
+              CARD TOP
+========================================= */
+
+.hero-card-top {
+  position: relative;
+
+  width: 100%;
+
+  padding: 28px 28px 40px;
+
+  background-image: url(../../assets/Graphicdesign-images/10005.svg);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
+
+  min-height: 230px;
+}
+
+
+/* =========================================
+                LOGO
+========================================= */
+
+.hero-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 18px;
+}
+
+.hero-logo-badge {
+  background: var(--hero-maroon);
+
+  color: #ffffff;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.hero-logo-text {
+  font-size: 0.85rem;
+
+  font-weight: 600;
+
+  color: #3a3a3a;
+}
+
+
+/* =========================================
+              CARD TITLE
+========================================= */
+
+.hero-card-title {
+  width: 100%;
+
+  font-size: 1.9rem;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  margin: 0 0 10px;
+
+  color: #1a1a1a;
+
+  overflow-wrap: break-word;
+}
+
+.hero-card-title:first-line {
+  color: var(--hero-maroon);
+}
+
+
+/* =========================================
+              TAGLINE
+========================================= */
+
+.hero-card-tagline {
+  font-size: 0.72rem;
+
+  color: #555;
+
+  max-width: 190px;
+
+  line-height: 1.4;
+
+  margin: 0 0 18px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+                ICONS
+========================================= */
+
+.hero-icons {
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.hero-icon {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.65rem;
+
+  font-weight: 800;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.25);
+
+  flex-shrink: 0;
+}
+
+.hero-icon-ps {
+  background: #001e36;
+}
+
+.hero-icon-ai {
+  background: #330000;
+}
+
+.hero-icon-fig {
+  background: #1a1a1a;
+}
+
+
+/* =========================================
+              CARD PHOTO
+========================================= */
+
+.hero-card-photo {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #d9d3c9,
+      #f4f1ea
+    );
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-card-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.hero-photo-circle {
+  width: 100%;
+  height: 100%;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #cfd6da,
+      #cfd6da 10px,
+      #dfe4e7 10px,
+      #dfe4e7 20px
+    );
+}
+
+
+/* =========================================
+              CARD BOTTOM
+========================================= */
+
+.hero-card-bottom {
+  width: 100%;
+
+  padding: 26px 28px 30px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+            OUTCOMES TITLE
+========================================= */
+
+.hero-outcomes-label {
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #8a8a8a;
+
+  margin-bottom: 16px;
+}
+
+
+/* =========================================
+              OUTCOMES LIST
+========================================= */
+
+.hero-outcomes-list {
+  width: 100%;
+
+  list-style: none;
+
+  margin: 0 0 26px;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.hero-outcomes-list li {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+
+  color: #222;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+                CHECK
+========================================= */
+
+.hero-check {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: var(--hero-purple);
+
+  color: #ffffff;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+              ENROLL BUTTON
+========================================= */
+
+.hero-btn-enroll {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: block;
+
+  background: var(--hero-purple);
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(155, 61, 251, 0.35);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-btn-enroll:hover {
+  background: var(--hero-purple-light);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(155, 61, 251, 0.5);
+}
+
+.hero-btn-enroll:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+                TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .hero-wrapper {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(320px, 400px);
+
+    gap: 35px;
+
+    padding: 60px 35px;
+  }
+
+  .hero-left {
+    margin-top: 60px;
+  }
+
+  .hero-right {
+    margin-top: 60px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-card-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+
+/* =========================================
+                MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero-wrapper {
+    width: 100%;
+
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 50px 24px 60px;
+
+    align-items: start;
+  }
+
+  .hero-left {
+    width: 100%;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    min-width: 0;
+  }
+
+  .hero-title {
+    width: 100%;
+
+    font-size: 2rem;
+
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    width: 100%;
+
+    font-size: 1rem;
+  }
+
+  .hero-divider {
+    width: 100%;
+  }
+
+  .hero-paragraph {
+    width: 100%;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+  }
+
+  .hero-btn-start {
+    margin-top: 8px;
+  }
+
+  .hero-right {
+    width: 100%;
+
+    margin-top: 0;
+
+    justify-content: center;
+
+    min-width: 0;
+  }
+
+  .hero-card {
+    width: 100%;
+
+    max-width: 450px;
+
+    /*
+      Mobile par fixed height nahi
+    */
+    height: auto;
+
+    min-height: 0;
+  }
+}
+
+
+/* =========================================
+              SMALL MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .hero-wrapper {
+    width: 100%;
+
+    padding: 40px 16px 50px;
+
+    gap: 35px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    margin-top: 100px;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+
+    line-height: 1.6;
+  }
+
+  .hero-paragraph {
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+  }
+
+  .hero-btn-start {
+    width: 100%;
+
+    padding: 14px 20px;
+  }
+
+
+  /* =====================
+          CARD
+  ===================== */
+
+  .hero-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    border-radius: 16px;
+  }
+
+  .hero-card-top {
+    width: 100%;
+
+    min-height: 220px;
+
+    padding: 22px 20px 30px;
+  }
+
+  .hero-logo {
+    margin-bottom: 14px;
+  }
+
+  .hero-logo-text {
+    font-size: 0.8rem;
+  }
+
+  .hero-card-title {
+    font-size: 1.65rem;
+
+    line-height: 1.05;
+
+    max-width: 55%;
+  }
+
+  .hero-card-tagline {
+    font-size: 0.68rem;
+
+    max-width: 48%;
+
+    line-height: 1.45;
+  }
+
+  .hero-card-photo {
+    top: 15px;
+
+    right: 15px;
+
+    width: 125px;
+    height: 125px;
+  }
+
+  .hero-icons {
+    gap: 7px;
+  }
+
+  .hero-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero-card-bottom {
+    width: 100%;
+
+    padding: 22px 20px 24px;
+  }
+
+  .hero-outcomes-label {
+    margin-bottom: 14px;
+  }
+
+  .hero-outcomes-list {
+    width: 100%;
+
+    gap: 11px;
+
+    margin-bottom: 22px;
+  }
+
+  .hero-outcomes-list li {
+    width: 100%;
+
+    font-size: 0.82rem;
+
+    line-height: 1.45;
+
+    align-items: flex-start;
+  }
+
+  .hero-check {
+    width: 19px;
+    height: 19px;
+
+    flex-shrink: 0;
+  }
+
+  .hero-btn-enroll {
+    width: 100%;
+
+    min-height: 50px;
+
+    padding: 14px;
+
+    font-size: 0.9rem;
+  }
+}
+
+
+/* =========================================
+              VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .hero-wrapper {
+    width: 100%;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 1.55rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .hero-paragraph {
+    font-size: 0.82rem;
+  }
+
+  .hero-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+  }
+
+  .hero-card-top {
+    min-height: 200px;
+
+    padding: 20px 16px 25px;
+  }
+
+  .hero-card-title {
+    font-size: 1.4rem;
+
+    max-width: 55%;
+  }
+
+  .hero-card-tagline {
+    font-size: 0.62rem;
+
+    max-width: 50%;
+  }
+
+  .hero-card-photo {
+    width: 105px;
+    height: 105px;
+
+    top: 14px;
+    right: 12px;
+  }
+
+  .hero-card-bottom {
+    padding: 20px 16px 22px;
+  }
+
+  .hero-outcomes-list {
+    gap: 10px;
+  }
+
+  .hero-outcomes-list li {
+    font-size: 0.77rem;
+
+    line-height: 1.45;
+  }
+
+  .hero-check {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero-btn-enroll {
+    width: 100%;
+
+    padding: 13px 10px;
+
+    font-size: 0.85rem;
+  }
+}

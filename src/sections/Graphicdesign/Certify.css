@@ -1,0 +1,180 @@
+/* =========================================
+   CERTIFY SECTION
+========================================= */
+
+.certify-section {
+  width: 100%;
+  background: #050505;
+  color: white;
+
+  /* SECTION HEIGHT COMPACT */
+  padding: 30px 8% 35px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.certify-container {
+  width: 100%;
+  max-width: 1250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.certify-container h2 {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 50px;
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  background: linear-gradient(
+    90deg,
+    #8b2cff,
+    #b02cff
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.certify-container p {
+  margin: 8px 0 18px;
+
+  max-width: 600px;
+
+  color: #AAABAB;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   CERTIFICATE WRAPPER
+========================================= */
+
+.certificate-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================================
+   CERTIFICATE IMAGE
+========================================= */
+
+.certificate-image {
+  display: block;
+
+  width: 100%;
+  max-width: 800px;
+
+  height: auto;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 0 0 2px rgba(255, 0, 70, 0.5),
+    0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .certify-section {
+    padding: 25px 6% 30px;
+    min-height: 150px;
+  }
+
+  .certify-container h2 {
+    font-size: 34px;
+  }
+
+  .certify-container p {
+    font-size: 16px;
+
+    margin: 6px 0 16px;
+  }
+
+  .certificate-image {
+    max-width: 700px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .certify-section {
+    padding: 20px 15px 25px;
+  }
+
+  .certify-container h2 {
+    font-size: 24px;
+
+    line-height: 1.1;
+  }
+
+  .certify-container p {
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    margin: 5px 0 14px;
+  }
+
+  .certify-container p br {
+    display: none;
+  }
+
+  .certificate-image {
+    width: 100%;
+
+    max-width: 100%;
+
+    border-radius: 4px;
+  }
+}

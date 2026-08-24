@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+          REACT VIDEO SECTION
+========================================= */
+
+.reactvideo-wrapper {
+  --reactvideo-green: #97C04B;
+  --reactvideo-green-dark: #7FA63D;
+  --reactvideo-black: #000000;
+  --reactvideo-white: #ffffff;
+
+  width: 100%;
+  background: var(--reactvideo-black);
+
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* =========================================
+              BOX SIZING
+========================================= */
+
+.reactvideo-wrapper *,
+.reactvideo-wrapper *::before,
+.reactvideo-wrapper *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+                HEADER
+========================================= */
+
+.reactvideo-header {
+  text-align: center;
+  padding: 35px 20px 30px;
+}
+
+
+/* =========================================
+                HEADING
+========================================= */
+
+.reactvideo-heading {
+  font-size: 40px;
+  font-weight: 800;
+
+  color: var(--reactvideo-white);
+
+  line-height: 1.3;
+
+  margin: 0;
+}
+
+
+/* =========================================
+              HIGHLIGHT
+========================================= */
+
+.reactvideo-highlight {
+  color: var(--reactvideo-green);
+}
+
+
+/* =========================================
+            VIDEO TRACK OUTER
+========================================= */
+
+.reactvideo-track-outer {
+  background: var(--reactvideo-green);
+
+  padding: 26px 0;
+
+  overflow: hidden;
+
+  position: relative;
+
+  height: 550px;
+}
+
+
+/* =========================================
+              VIDEO TRACK
+========================================= */
+
+.reactvideo-track {
+  display: flex;
+
+  gap: 16px;
+
+  width: max-content;
+
+  animation:
+    reactvideo-scroll 25s linear infinite;
+}
+
+
+/* =========================================
+            PAUSE ON HOVER
+========================================= */
+
+.reactvideo-track:hover {
+  animation-play-state: paused;
+}
+
+
+/* =========================================
+              ANIMATION
+========================================= */
+
+@keyframes reactvideo-scroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* =========================================
+                VIDEO CARD
+========================================= */
+
+.reactvideo-card {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 290px;
+  height: 495px;
+
+  margin-left: 20px;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      160deg,
+      #ffffff 0%,
+      #d8d8d8 100%
+    );
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+              CARD HOVER
+========================================= */
+
+.reactvideo-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+                  VIDEO
+========================================= */
+
+.reactvideo-video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================
+                PLACEHOLDER
+========================================= */
+
+.reactvideo-card-placeholder {
+  width: 100%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      160deg,
+      #ffffff 0%,
+      #d0d0d0 100%
+    );
+}
+
+
+/* =========================================
+              PLAY BUTTON
+========================================= */
+
+.reactvideo-play-btn {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.45);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+            PLAY BUTTON HOVER
+========================================= */
+
+.reactvideo-play-btn:hover {
+  transform:
+    translate(-50%, -50%)
+    scale(1.1);
+
+  background: var(--reactvideo-green-dark);
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================
+                  SVG
+========================================= */
+
+.reactvideo-play-btn svg {
+  width: 20px;
+  height: 20px;
+
+  margin-left: 2px;
+}
+
+
+/* =========================================
+              PLAYING STATE
+========================================= */
+
+.reactvideo-play-btn.playing svg {
+  margin-left: 0;
+}
+
+
+/* =========================================
+                  MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .reactvideo-header {
+    padding: 25px 15px 22px;
+  }
+
+  .reactvideo-heading {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .reactvideo-track-outer {
+    height: 250px;
+    padding: 25px 0;
+  }
+
+  .reactvideo-card {
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .reactvideo-play-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .reactvideo-play-btn svg {
+    width: 17px;
+    height: 17px;
+  }
+
+}

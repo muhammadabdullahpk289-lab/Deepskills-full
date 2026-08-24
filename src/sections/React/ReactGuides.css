@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.lg-wrapper {
+
+  --lg-bg: #050505;
+
+  --lg-red: #e6425a;
+
+  --lg-text-light: #ffffff;
+
+  --lg-text-muted: #8f8a90;
+
+  --lg-border: #3a1e26;
+
+  width: 100%;
+
+  background: var(--lg-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 50px 60px 70px 60px;
+
+  box-sizing: border-box;
+
+}
+
+
+.lg-wrapper * {
+
+  box-sizing: border-box;
+
+}
+
+
+/* LABEL */
+
+.lg-label {
+
+  font-size: 0.75rem;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  color: var(--lg-red);
+
+  margin-bottom: 10px;
+
+}
+
+
+/* HEADING */
+
+.lg-heading {
+
+  font-size: 2.4rem;
+
+  font-weight: 800;
+
+  color: var(--lg-text-light);
+
+  margin: 0 0 32px 0;
+
+}
+
+
+/* GRID */
+
+.lg-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  max-width: 1200px;
+
+}
+
+
+/* CARD */
+
+.lg-card {
+
+  background: #0d0d0d;
+
+  border: 1px solid var(--lg-border);
+
+  border-radius: 12px;
+
+  padding: 24px 26px;
+
+  min-height: 130px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
+
+}
+
+
+/* HOVER */
+
+.lg-card:hover {
+
+  border-color: var(--lg-red);
+
+  background: #111111;
+
+  transform: translateY(-3px);
+
+}
+
+
+/* TITLE */
+
+.lg-title {
+
+  font-size: 1.02rem;
+
+  font-weight: 700;
+
+  color: var(--lg-text-light);
+
+  line-height: 1.4;
+
+  margin: 0 0 20px 0;
+
+}
+
+
+/* META */
+
+.lg-meta {
+
+  font-size: 0.85rem;
+
+  color: var(--lg-text-muted);
+
+  font-weight: 500;
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .lg-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .lg-heading {
+
+    font-size: 1.9rem;
+
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .lg-wrapper {
+
+    padding: 40px 20px 55px;
+
+  }
+
+  .lg-label {
+
+    font-size: 0.7rem;
+
+  }
+
+  .lg-heading {
+
+    font-size: 1.7rem;
+
+    margin-bottom: 24px;
+
+  }
+
+  .lg-card {
+
+    padding: 22px;
+
+    min-height: 120px;
+
+  }
+
+  .lg-title {
+
+    font-size: 0.95rem;
+
+  }
+
+  .lg-meta {
+
+    font-size: 0.8rem;
+
+  }
+
+}

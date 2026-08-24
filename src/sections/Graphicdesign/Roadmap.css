@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+.roadmap-wrapper {
+  --roadmap-bg: #000000;
+  --roadmap-purple: #9333ea;
+
+  background: var(--roadmap-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.roadmap-wrapper * {
+  box-sizing: border-box;
+}
+
+.roadmap-heading {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+}
+
+.roadmap-highlight {
+  color: var(--roadmap-purple);
+}
+
+.roadmap-image {
+  width: 100%;
+}
+
+.roadmap-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

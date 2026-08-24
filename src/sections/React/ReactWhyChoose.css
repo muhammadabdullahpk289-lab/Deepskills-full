@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+          REACT WHY CHOOSE
+========================================= */
+
+.reactwhychoose-wrapper {
+
+  --reactwhychoose-bg: #070a0b;
+
+  --reactwhychoose-green: #97C04B;
+
+  --reactwhychoose-green-dark: #7FA63D;
+
+  --reactwhychoose-row-bg: #101516;
+
+  --reactwhychoose-row-bg-alt: #141a1b;
+
+  --reactwhychoose-text: #ffffff;
+
+  --reactwhychoose-muted: #a8b1b3;
+
+  --reactwhychoose-red: #e74c3c;
+
+
+  background: var(--reactwhychoose-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 50px 50px 60px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+}
+
+
+.reactwhychoose-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+                HEADING
+========================================= */
+
+.reactwhychoose-heading {
+
+  text-align: center;
+
+  font-size: 2.2rem;
+
+  font-weight: 800;
+
+  color: var(--reactwhychoose-green);
+
+  margin: 0 0 34px;
+
+}
+
+
+/* =========================================
+                 TABLE
+========================================= */
+
+.reactwhychoose-table {
+
+  width: 100%;
+
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: var(--reactwhychoose-row-bg);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid rgba(151, 192, 75, 0.25);
+
+}
+
+
+/* =========================================
+                   ROW
+========================================= */
+
+.reactwhychoose-row {
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr 1fr 1fr 1fr;
+
+  align-items: center;
+
+}
+
+
+/* =========================================
+              ALTERNATE ROWS
+========================================= */
+
+.reactwhychoose-row:nth-child(even) {
+
+  background:
+    var(--reactwhychoose-row-bg-alt);
+
+}
+
+
+/* =========================================
+                HEADER ROW
+========================================= */
+
+.reactwhychoose-row-header {
+
+  background: #172022;
+
+  padding: 22px 0;
+
+  border-bottom:
+    1px solid rgba(151, 192, 75, 0.12);
+
+}
+
+
+/* =========================================
+                NORMAL ROW
+========================================= */
+
+.reactwhychoose-row:not(
+  .reactwhychoose-row-header
+) {
+
+  padding: 18px 0;
+
+  transition:
+    background 0.3s ease;
+
+}
+
+
+/* =========================================
+                   HOVER
+========================================= */
+
+.reactwhychoose-row:not(
+  .reactwhychoose-row-header
+):hover {
+
+  background:
+    rgba(151, 192, 75, 0.08);
+
+}
+
+
+/* =========================================
+                   CELL
+========================================= */
+
+.reactwhychoose-cell {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0 20px;
+
+  font-size: 0.92rem;
+
+  color: var(--reactwhychoose-text);
+
+}
+
+
+/* =========================================
+              FEATURE CELL
+========================================= */
+
+.reactwhychoose-cell-feature {
+
+  justify-content: flex-start;
+
+  font-weight: 600;
+
+}
+
+
+.reactwhychoose-row-header
+.reactwhychoose-cell-feature {
+
+  font-weight: 700;
+
+  color: var(--reactwhychoose-green);
+
+}
+
+
+/* =========================================
+                BRAND CELL
+========================================= */
+
+.reactwhychoose-cell-brand {
+
+  font-weight: 700;
+
+  gap: 8px;
+
+}
+
+
+/* =========================================
+                   LOGO
+========================================= */
+
+.reactwhychoose-logo-text {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.reactwhychoose-logo {
+
+  width: 110px;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+/* =========================================
+              YOUTUBE BADGE
+========================================= */
+
+.reactwhychoose-yt-badge {
+
+  width: 34px;
+
+  height: 24px;
+
+  border-radius: 6px;
+
+  background: #ff0000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+/* =========================================
+                STATUS ICON
+========================================= */
+
+.reactwhychoose-icon {
+
+  width: 26px;
+
+  height: 26px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+}
+
+
+/* =========================================
+                    YES
+========================================= */
+
+.reactwhychoose-icon-yes {
+
+  background:
+    var(--reactwhychoose-green);
+
+}
+
+
+/* =========================================
+                     NO
+========================================= */
+
+.reactwhychoose-icon-no {
+
+  background:
+    var(--reactwhychoose-red);
+
+}
+
+
+/* =========================================
+                  MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .reactwhychoose-wrapper {
+
+    padding: 45px 15px 50px;
+
+  }
+
+
+  .reactwhychoose-heading {
+
+    font-size: 1.7rem;
+
+    margin-bottom: 28px;
+
+  }
+
+
+  .reactwhychoose-table {
+
+    border-radius: 14px;
+
+  }
+
+
+  .reactwhychoose-cell {
+
+    padding: 0 10px;
+
+    font-size: 0.8rem;
+
+  }
+
+
+  .reactwhychoose-logo {
+
+    width: 70px;
+
+  }
+
+
+  .reactwhychoose-yt-badge {
+
+    width: 30px;
+
+    height: 22px;
+
+  }
+
+
+  .reactwhychoose-icon {
+
+    width: 23px;
+
+    height: 23px;
+
+  }
+
+}
+
+
+/* =========================================
+              SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .reactwhychoose-wrapper {
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+  }
+
+
+  .reactwhychoose-row {
+
+    grid-template-columns:
+      1.5fr 0.8fr 0.8fr 0.9fr;
+
+  }
+
+
+  .reactwhychoose-cell {
+
+    padding: 0 5px;
+
+    font-size: 0.68rem;
+
+  }
+
+
+  .reactwhychoose-logo {
+
+    width: 55px;
+
+  }
+
+
+  .reactwhychoose-icon {
+
+    width: 20px;
+
+    height: 20px;
+
+  }
+
+
+  .reactwhychoose-icon svg {
+
+    width: 11px;
+
+    height: 11px;
+
+  }
+
+}

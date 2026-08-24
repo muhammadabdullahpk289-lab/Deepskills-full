@@ -1,0 +1,429 @@
+/* =========================================
+   CAREER GROWTH SECTION
+========================================= */
+
+.career-section {
+  width: 100%;
+  min-height: 650px;
+
+  padding: 35px 70px 70px;
+
+  position: relative;
+  overflow: hidden;
+
+    background:
+        radial-gradient(
+        circle at 18% 55%,
+        rgba(126, 27, 180, 0.12),
+        transparent 30%
+        ),
+        radial-gradient(
+        circle at 85% 35%,
+        rgba(116, 20, 160, 0.08),
+        transparent 35%
+        ),
+        #070609;
+        background-image: url(../../assets/Graphicdesign-images/5eaa6a46-7ca7-4989-be02-4511729a93b3.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+  color: white;
+}
+
+
+/* =========================================
+   BACKGROUND LINES
+========================================= */
+
+.career-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 39px,
+      rgba(170, 30, 90, 0.08) 40px
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.career-heading {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 95px;
+
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  background: linear-gradient(
+    90deg,
+    #8b2cff,
+    #b02cff
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.career-container {
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================================
+   LEFT IMAGE
+========================================= */
+
+.career-image-box {
+  width: 410px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* FLOATING IMAGE */
+
+.career-image {
+  width: 100%;
+  max-width: 390px;
+
+  object-fit: contain;
+
+  animation: careerFloat 7s ease-in-out infinite;
+
+  filter:
+    drop-shadow(0 0 20px rgba(142, 35, 255, 0.18))
+    drop-shadow(0 0 45px rgba(142, 35, 255, 0.08));
+}
+
+
+/* FLOAT ANIMATION */
+
+@keyframes careerFloat {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+
+/* =========================================
+   CARDS AREA
+========================================= */
+
+.career-cards {
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.career-card {
+  min-height: 125px;
+
+  padding: 26px 20px 26px 15px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 17px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(40, 40, 40, 0.82),
+      rgba(25, 25, 25, 0.9)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  box-shadow:
+    inset 0 0 20px rgba(255, 255, 255, 0.015),
+    0 8px 20px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.career-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(157, 45, 255, 0.55);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(45, 35, 55, 0.95),
+      rgba(25, 25, 25, 0.95)
+    );
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(139, 44, 255, 0.12);
+}
+
+
+/* =========================================
+   PURPLE SIDE BAR
+========================================= */
+
+.career-line {
+  width: 13px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: linear-gradient(
+    180deg,
+    #9d2cff,
+    #7d20e8
+  );
+
+  box-shadow:
+    0 0 12px rgba(157, 44, 255, 0.35);
+
+  transition:
+    height 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.career-card:hover .career-line {
+  height: 82px;
+
+  box-shadow:
+    0 0 22px rgba(157, 44, 255, 0.7);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.career-content {
+  margin-left: 14px;
+}
+
+
+/* NUMBER */
+
+.career-number {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #eeeeee;
+
+  transition: color 0.3s ease;
+}
+
+
+/* TITLE */
+
+.career-card h3 {
+  margin: 0;
+
+  max-width: 175px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  color: #f5f5f5;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================
+   HEADING COLOR ON HOVER
+========================================= */
+
+.career-card:hover h3 {
+  background: linear-gradient(
+    90deg,
+    #9d2cff,
+    #c23cff
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  transform: translateX(3px);
+}
+
+
+.career-card:hover .career-number {
+  color: #a52fff;
+}
+
+
+/* =========================================
+   SECOND ROW CENTER
+========================================= */
+
+.career-card:nth-child(4) {
+  grid-column: 2;
+}
+
+.career-card:nth-child(5) {
+  grid-column: 3;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .career-section {
+    padding: 35px 35px 60px;
+  }
+
+  .career-container {
+    gap: 40px;
+  }
+
+  .career-image-box {
+    width: 330px;
+  }
+
+  .career-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .career-card:nth-child(4),
+  .career-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .career-heading {
+    margin-bottom: 50px;
+    font-size: 34px;
+  }
+
+  .career-container {
+    flex-direction: column;
+  }
+
+  .career-image-box {
+    width: 100%;
+  }
+
+  .career-image {
+    max-width: 330px;
+  }
+
+  .career-cards {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .career-section {
+    padding: 30px 18px 50px;
+  }
+
+  .career-heading {
+    font-size: 29px;
+  }
+
+  .career-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .career-card:nth-child(4),
+  .career-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .career-card {
+    min-height: 115px;
+  }
+
+}

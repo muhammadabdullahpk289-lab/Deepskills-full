@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* =========================================
+   CONTACT REACH OUT SECTION
+========================================= */
+
+.contactreachout-section {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+
+  padding: 40px 20px 24px;
+
+  box-sizing: border-box;
+
+  /* BODY KI BACKGROUND IMAGE VISIBLE RAHEGI */
+  background: black;
+
+  overflow: hidden;
+
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contactreachout-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.contactreachout-heading {
+  margin: 0 0 23px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 45px;
+  font-weight: 800;
+
+  line-height: 1.25;
+}
+
+.contactreachout-heading span {
+  color: #e6425a;
+}
+
+
+/* =========================================
+   CARDS GRID
+========================================= */
+
+.contactreachout-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   GLASS CARD
+========================================= */
+
+.contactreachout-card {
+  position: relative;
+
+  width: 100%;
+  min-height: 160px;
+
+  padding: 14px 14px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  /* GLASS / TRANSPARENT */
+  background: rgba(20, 20, 20, 0.42);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 8px 25px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   MAROON BOTTOM GLOW
+========================================= */
+
+.contactreachout-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 135px;
+  height: 135px;
+
+  right: -65px;
+  bottom: -75px;
+
+  background: rgba(122, 31, 43, 0.58);
+
+  filter: blur(35px);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.contactreachout-card:hover {
+  transform: translateY(-4px);
+
+  background: rgba(30, 30, 30, 0.52);
+
+  border-color: rgba(230, 66, 90, 0.5);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 12px 30px rgba(0, 0, 0, 0.3),
+    0 0 22px rgba(122, 31, 43, 0.2);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.contactreachout-icon {
+  position: relative;
+
+  z-index: 2;
+
+  width: auto;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: #ffffff;
+
+  font-size: 23px;
+
+  /* IMPORTANT:
+     screenshot mein icon ke around circle nahi hai */
+  background: transparent;
+
+  border: none;
+
+  box-shadow: none;
+
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.contactreachout-text {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0;
+
+  max-width: 175px;
+
+  color: #eeeeee;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contactreachout-section {
+    padding: 35px 25px;
+  }
+
+  .contactreachout-content {
+    max-width: 800px;
+  }
+
+  .contactreachout-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+  }
+
+  .contactreachout-card {
+    min-height: 150px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contactreachout-section {
+    padding: 35px 18px;
+  }
+
+  .contactreachout-heading {
+    font-size: 23px;
+
+    margin-bottom: 25px;
+  }
+
+  .contactreachout-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .contactreachout-card {
+    min-height: 135px;
+
+    padding: 16px;
+  }
+
+  .contactreachout-icon {
+    font-size: 21px;
+  }
+
+  .contactreachout-text {
+    max-width: 100%;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .contactreachout-heading {
+    font-size: 21px;
+  }
+
+  .contactreachout-card {
+    min-height: 130px;
+  }
+}

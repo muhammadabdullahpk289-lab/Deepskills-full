@@ -1,0 +1,174 @@
+/* =========================================
+   REACT CERTIFY SECTION
+========================================= */
+
+.reactcertify-section {
+  width: 100%;
+
+  background: #050708;
+  color: white;
+
+  /* COMPACT HEIGHT */
+  padding: 30px 8% 35px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.reactcertify-container {
+  width: 100%;
+  max-width: 1250px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.reactcertify-container h2 {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 50px;
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  color: #7CB342;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.reactcertify-container p {
+  margin: 8px 0 18px;
+
+  max-width: 600px;
+
+  color: #aaabab;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   CERTIFICATE WRAPPER
+========================================= */
+
+.reactcertify-certificate-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================================
+   CERTIFICATE IMAGE
+========================================= */
+
+.reactcertify-certificate-image {
+  display: block;
+
+  width: 100%;
+  max-width: 800px;
+
+  height: auto;
+
+  border-radius: 6px;
+
+  border: 1px solid #7CB342;
+
+  box-shadow:
+    0 0 0 2px rgba(139, 242, 254, 0.35),
+    0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .reactcertify-section {
+    padding: 25px 6% 30px;
+    min-height: 150px;
+  }
+
+  .reactcertify-container h2 {
+    font-size: 34px;
+  }
+
+  .reactcertify-container p {
+    font-size: 16px;
+
+    margin: 6px 0 16px;
+  }
+
+  .reactcertify-certificate-image {
+    max-width: 700px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .reactcertify-section {
+    padding: 20px 15px 25px;
+  }
+
+  .reactcertify-container h2 {
+    font-size: 24px;
+
+    line-height: 1.1;
+  }
+
+  .reactcertify-container p {
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    margin: 5px 0 14px;
+  }
+
+  .reactcertify-container p br {
+    display: none;
+  }
+
+  .reactcertify-certificate-image {
+    width: 100%;
+
+    max-width: 100%;
+
+    border-radius: 4px;
+  }
+}

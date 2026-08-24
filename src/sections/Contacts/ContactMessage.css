@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+/* =========================================
+   CONTACT MESSAGE SECTION
+========================================= */
+
+.contact-message-section {
+  width: 100%;
+  min-height: 510px;
+
+  position: relative;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background-color: black;
+
+  /* Background intentionally empty
+     Tum apni background image laga sakte ho */
+     background-image: url(../../assets/Contacts-images/10008.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.contact-message-container {
+  width: 100%;
+  max-width: 900px;
+
+  min-height: 490px;
+
+  margin: 0 auto;
+
+  padding: 8px 45px 18px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 58px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT FORM
+========================================= */
+
+.contact-message-form {
+  width: 490px;
+  /* flex-shrink: 0; */
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.contact-message-form h2 {
+  margin: 12px 0 0;
+
+  font-size: 45px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.contact-message-subtitle {
+  margin: 2px 0 15px;
+
+  font-size: 20px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  color: #dddddd;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.contact-field {
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.contact-field label {
+  margin-bottom: 5px;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.contact-field input {
+  width: 100%;
+
+  height: 45px;
+
+  padding: 0 12px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 6px;
+
+  background: #9d2341;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+.contact-field input:focus {
+  background: #aa2747;
+
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.contact-message-field {
+  margin-bottom: 20px;
+}
+
+
+.contact-field textarea {
+  width: 100%;
+
+  height: 93px;
+
+  padding: 9px 12px;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  border-radius: 6px;
+
+  background: #9d2341;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+
+.contact-field textarea:focus {
+  background: #aa2747;
+
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contact-submit-btn {
+  width: 87px;
+
+  height: 31px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #8f1e39;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.contact-submit-btn:hover {
+  background: #b32648;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(157, 35, 65, 0.35);
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.contact-message-image {
+  width: 293px;
+
+  height: 496px;
+
+  flex-shrink: 0;
+
+  margin-top: 0;
+
+  overflow: hidden;
+
+  border-radius: 17px;
+
+  box-sizing: border-box;
+}
+
+
+.contact-message-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 17px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contact-message-container {
+    max-width: 760px;
+
+    padding: 25px 30px;
+
+    gap: 35px;
+  }
+
+  .contact-message-form {
+    width: calc(100% - 325px);
+  }
+
+  .contact-message-image {
+    width: 290px;
+    height: 450px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .contact-message-section {
+    min-height: auto;
+  }
+
+  .contact-message-container {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 35px 25px;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 35px;
+  }
+
+  .contact-message-form {
+    width: 100%;
+
+    max-width: 500px;
+  }
+
+  .contact-message-form h2 {
+    font-size: 24px;
+  }
+
+  .contact-message-image {
+    width: 100%;
+
+    max-width: 330px;
+
+    height: 430px;
+
+    margin-top: 0;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .contact-message-container {
+    padding: 30px 18px;
+  }
+
+  .contact-message-form h2 {
+    font-size: 22px;
+  }
+
+  .contact-message-image {
+    height: 390px;
+  }
+}

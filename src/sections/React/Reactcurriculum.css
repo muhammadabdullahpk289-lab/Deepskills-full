@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.reactcurriculum-wrapper {
+  --reactcurriculum-bg: #000000;
+  --reactcurriculum-green: #8bc34a;
+  --reactcurriculum-blue: #2f5da3;
+  --reactcurriculum-red: #a6362c;
+  --reactcurriculum-text-muted: #6b6b6b;
+
+  background: var(--reactcurriculum-bg);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.reactcurriculum-wrapper * {
+  box-sizing: border-box;
+}
+
+.reactcurriculum-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--reactcurriculum-green);
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.reactcurriculum-bar {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 36px 40px;
+  flex-wrap: wrap;
+}
+
+.reactcurriculum-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.reactcurriculum-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reactcurriculum-icon-green {
+  background: var(--reactcurriculum-green);
+}
+
+.reactcurriculum-icon-blue {
+  background: var(--reactcurriculum-blue);
+}
+
+.reactcurriculum-icon-red {
+  background: var(--reactcurriculum-red);
+}
+
+.reactcurriculum-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.reactcurriculum-title-green {
+  color: var(--reactcurriculum-green);
+}
+
+.reactcurriculum-title-blue {
+  color: var(--reactcurriculum-blue);
+}
+
+.reactcurriculum-title-red {
+  color: var(--reactcurriculum-red);
+}
+
+.reactcurriculum-subtitle {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--reactcurriculum-text-muted);
+}
+
+.reactcurriculum-divider {
+  width: 1px;
+  height: 50px;
+  background: #e0e0e0;
+}
+
+.reactcurriculum-cta {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.reactcurriculum-btn {
+  background: var(--reactcurriculum-green);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 44px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(139, 195, 74, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reactcurriculum-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(139, 195, 74, 0.8);
+}
+
+@media (max-width: 900px) {
+  .reactcurriculum-bar {
+    gap: 24px;
+  }
+  .reactcurriculum-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .reactcurriculum-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+  }
+  .reactcurriculum-heading {
+    font-size: 1.6rem;
+  }
+}

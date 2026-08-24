@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.explorecourse-wrapper {
+  --explorecourse-bg: #0a0a0a;
+  --explorecourse-maroon: #7a1f2b;
+  --explorecourse-maroon-light: #9b2a3a;
+  --explorecourse-card-bg: #151515;
+  --explorecourse-text-light: #ffffff;
+  --explorecourse-text-muted: #a8a3a3;
+
+  background: var(--explorecourse-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 40px 30px 50px 30px;
+  box-sizing: border-box;
+  margin-top: -100px;
+}
+
+.explorecourse-wrapper * {
+  box-sizing: border-box;
+}
+
+.explorecourse-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  margin-top: 100px;
+  font-family: 'Asimovian' , sans-serif;
+}
+
+.explorecourse-subtext {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--explorecourse-text-muted);
+  max-width: 480px;
+  margin: 0 auto 28px auto;
+  line-height: 1.5;
+}
+
+.explorecourse-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.explorecourse-card {
+  background: var(--explorecourse-card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.explorecourse-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--explorecourse-maroon-light);
+}
+
+.explorecourse-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #1e1e1e;
+  overflow: hidden;
+}
+
+.explorecourse-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.explorecourse-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #1c1c1c,
+    #1c1c1c 10px,
+    #232323 10px,
+    #232323 20px
+  );
+}
+
+.explorecourse-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--explorecourse-maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -20px auto 10px auto;
+  border: 3px solid var(--explorecourse-card-bg);
+  position: relative;
+  z-index: 1;
+}
+
+.explorecourse-title {
+  text-align: center;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--explorecourse-text-light);
+  margin: 0 16px 8px 16px;
+}
+
+.explorecourse-desc {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--explorecourse-text-muted);
+  line-height: 1.45;
+  margin: 0 16px 16px 16px;
+  flex-grow: 1;
+}
+
+/* =====================================================
+   VIEW COURSE DETAILS
+===================================================== */
+
+.explorecourse-btn {
+  margin: 0 16px;
+
+  background: var(--explorecourse-maroon);
+  color: #ffffff;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 10px 14px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  /* Link ki default styling remove */
+  text-decoration: none;
+
+  /* Button jaisa layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.explorecourse-btn:hover {
+  background: var(--explorecourse-maroon-light);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   VISITED
+===================================================== */
+
+.explorecourse-btn:visited {
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   ACTIVE
+===================================================== */
+
+.explorecourse-btn:active {
+  color: #ffffff;
+
+  transform: translateY(0);
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.explorecourse-btn:focus {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  outline: none;
+}
+@media (max-width: 900px) {
+  .explorecourse-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .explorecourse-grid {
+    grid-template-columns: 1fr;
+  }
+  .explorecourse-heading {
+    font-size: 1.3rem;
+  }
+}

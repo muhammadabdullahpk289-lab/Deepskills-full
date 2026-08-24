@@ -1,0 +1,1094 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+        LARAVEL HERO SECTION
+========================================= */
+
+.laravelhero-wrapper {
+  --laravelhero-bg: #0c0812;
+
+  /* MAIN CYAN COLOR */
+  --laravelhero-purple: #03E4FE;
+  --laravelhero-purple-light: #03E4FE;
+
+  --laravelhero-maroon: #7a1f2b;
+
+  --laravelhero-text-light: #f2f0f5;
+  --laravelhero-text-muted: #c9c4d1;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--laravelhero-bg);
+  background-image:
+    linear-gradient(rgba(3, 228, 254, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(3, 228, 254, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 12% 25%, rgba(3, 228, 254, 0.16) 0%, transparent 35%),
+    radial-gradient(circle at 85% 70%, rgba(3, 228, 254, 0.10) 0%, transparent 40%);
+  background-size: 42px 42px, 42px 42px, 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  background-repeat: repeat, repeat, no-repeat, no-repeat;
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 70px 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(360px, 460px);
+
+  gap: 60px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+
+  margin-top: -100px;
+}
+
+
+/* =========================================
+              GLOBAL BOX SIZING
+========================================= */
+
+.laravelhero-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+              LEFT COLUMN
+========================================= */
+
+.laravelhero-left {
+  width: 100%;
+  max-width: 100%;
+
+  color: var(--laravelhero-text-light);
+
+  margin-top: 100px;
+
+  min-width: 0;
+}
+
+
+/* =========================================
+                 TITLE
+========================================= */
+
+.laravelhero-title {
+  width: 100%;
+
+  font-size: 3.2rem;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  margin: 0 0 20px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* CYAN HIGHLIGHT */
+
+.laravelhero-highlight {
+  color: #03E4FE;
+}
+
+
+/* =========================================
+                SUBTITLE
+========================================= */
+
+.laravelhero-subtitle {
+  width: 100%;
+
+  font-size: 1.3rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  margin: 0 0 24px;
+
+  color: var(--laravelhero-text-light);
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+                DIVIDER
+========================================= */
+
+.laravelhero-divider {
+  width: 100%;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  margin-bottom: 24px;
+}
+
+
+/* =========================================
+               PARAGRAPH
+========================================= */
+
+.laravelhero-paragraph {
+  width: 100%;
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+
+  color: var(--laravelhero-text-muted);
+
+  margin: 0 0 18px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+              START BUTTON
+========================================= */
+
+.laravelhero-btn-start {
+  margin-top: 12px;
+
+  background: #03E4FE;
+
+  color: #071014;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 36px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(3, 228, 254, 0.35);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* START BUTTON HOVER */
+
+.laravelhero-btn-start:hover {
+  background: #03E4FE;
+
+  color: #000000;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(3, 228, 254, 0.5);
+}
+
+
+/* START BUTTON ACTIVE */
+
+.laravelhero-btn-start:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+              RIGHT COLUMN
+========================================= */
+
+.laravelhero-right {
+  width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+
+/* =========================================
+                  CARD
+========================================= */
+
+.laravelhero-card {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 450px;
+
+  height: auto;
+
+  min-height: 500px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.5);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.laravelhero-card:hover {
+  transform:
+    perspective(900px)
+    rotateX(2deg)
+    rotateY(2deg)
+    translateY(-5px);
+
+  box-shadow:
+    0 35px 75px rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================
+              CARD TOP
+========================================= */
+
+.laravelhero-card-top {
+  position: relative;
+
+  width: 100%;
+
+  padding: 28px 28px 40px;
+
+  background-image:
+    url("../../assets/Laravel-images/10006.svg");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
+
+  min-height: 230px;
+}
+
+
+/* =========================================
+                  LOGO
+========================================= */
+
+.laravelhero-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 18px;
+}
+
+
+.laravelhero-logo-badge {
+  background: var(--laravelhero-maroon);
+
+  color: #ffffff;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  width: 22px;
+
+  height: 22px;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.laravelhero-logo-text {
+  font-size: 0.85rem;
+
+  font-weight: 600;
+
+  color: #3a3a3a;
+}
+
+
+/* =========================================
+              CARD TITLE
+========================================= */
+
+.laravelhero-card-title {
+  width: 100%;
+
+  font-size: 1.9rem;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  margin: 0 0 10px;
+
+  color: #1a1a1a;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+              CARD TITLE FIRST LINE
+========================================= */
+
+.laravelhero-card-title:first-line {
+  color: var(--laravelhero-maroon);
+}
+
+
+/* =========================================
+                 TAGLINE
+========================================= */
+
+.laravelhero-card-tagline {
+  font-size: 0.72rem;
+
+  color: #555;
+
+  max-width: 190px;
+
+  line-height: 1.4;
+
+  margin: 0 0 18px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+                  ICONS
+========================================= */
+
+.laravelhero-icons {
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+
+.laravelhero-icon {
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 0.65rem;
+
+  font-weight: 800;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.25);
+
+  flex-shrink: 0;
+}
+
+
+/* PHOTOSHOP */
+
+.laravelhero-icon-ps {
+  background: #001e36;
+}
+
+
+/* ILLUSTRATOR */
+
+.laravelhero-icon-ai {
+  background: #330000;
+}
+
+
+/* FIGMA */
+
+.laravelhero-icon-fig {
+  background: #1a1a1a;
+}
+
+
+/* =========================================
+                CARD PHOTO
+========================================= */
+
+.laravelhero-card-photo {
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  width: 190px;
+
+  height: 190px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #d9d3c9,
+      #f4f1ea
+    );
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.laravelhero-card-photo img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+.laravelhero-photo-circle {
+  width: 100%;
+
+  height: 100%;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #cfd6da,
+      #cfd6da 10px,
+      #dfe4e7 10px,
+      #dfe4e7 20px
+    );
+}
+
+
+/* =========================================
+              CARD BOTTOM
+========================================= */
+
+.laravelhero-card-bottom {
+  width: 100%;
+
+  padding: 26px 28px 30px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+            OUTCOMES TITLE
+========================================= */
+
+.laravelhero-outcomes-label {
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #8a8a8a;
+
+  margin-bottom: 16px;
+}
+
+
+/* =========================================
+              OUTCOMES LIST
+========================================= */
+
+.laravelhero-outcomes-list {
+  width: 100%;
+
+  list-style: none;
+
+  margin: 0 0 26px;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.laravelhero-outcomes-list li {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+
+  color: #222222;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+                  CHECK
+========================================= */
+
+.laravelhero-check {
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #03E4FE;
+
+  color: #071014;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+              ENROLL BUTTON
+========================================= */
+
+.laravelhero-btn-enroll {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: block;
+
+  background: #03E4FE;
+
+  color: #071014;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(3, 228, 254, 0.35);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* ENROLL HOVER */
+
+.laravelhero-btn-enroll:hover {
+  background: #03E4FE;
+
+  color: #000000;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(3, 228, 254, 0.5);
+}
+
+
+/* ENROLL ACTIVE */
+
+.laravelhero-btn-enroll:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+                 TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .laravelhero-wrapper {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(320px, 400px);
+
+    gap: 35px;
+
+    padding: 60px 35px;
+  }
+
+
+  .laravelhero-left {
+    margin-top: 60px;
+  }
+
+
+  .laravelhero-right {
+    margin-top: 60px;
+  }
+
+
+  .laravelhero-title {
+    font-size: 2.2rem;
+  }
+
+
+  .laravelhero-card-photo {
+    width: 160px;
+
+    height: 160px;
+  }
+}
+
+
+/* =========================================
+                 MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .laravelhero-wrapper {
+    width: 100%;
+
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 50px 24px 60px;
+
+    align-items: start;
+  }
+
+
+  .laravelhero-left {
+    width: 100%;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    min-width: 0;
+  }
+
+
+  .laravelhero-title {
+    width: 100%;
+
+    font-size: 2rem;
+
+    line-height: 1.25;
+  }
+
+
+  .laravelhero-subtitle {
+    width: 100%;
+
+    font-size: 1rem;
+  }
+
+
+  .laravelhero-divider {
+    width: 100%;
+  }
+
+
+  .laravelhero-paragraph {
+    width: 100%;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+  }
+
+
+  .laravelhero-btn-start {
+    margin-top: 8px;
+  }
+
+
+  .laravelhero-right {
+    width: 100%;
+
+    margin-top: 0;
+
+    justify-content: center;
+
+    min-width: 0;
+  }
+
+
+  .laravelhero-card {
+    width: 100%;
+
+    max-width: 450px;
+
+    height: auto;
+
+    min-height: 0;
+  }
+}
+
+
+/* =========================================
+              SMALL MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .laravelhero-wrapper {
+    width: 100%;
+
+    padding: 40px 16px 50px;
+
+    gap: 35px;
+  }
+
+
+  .laravelhero-title {
+    font-size: 1.75rem;
+
+    margin-top: 100px;
+
+    line-height: 1.25;
+  }
+
+
+  .laravelhero-subtitle {
+    font-size: 0.92rem;
+
+    line-height: 1.6;
+  }
+
+
+  .laravelhero-paragraph {
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+  }
+
+
+  .laravelhero-btn-start {
+    width: 100%;
+
+    padding: 14px 20px;
+  }
+
+
+  /* =====================
+          CARD
+  ===================== */
+
+  .laravelhero-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    border-radius: 16px;
+  }
+
+
+  .laravelhero-card-top {
+    width: 100%;
+
+    min-height: 220px;
+
+    padding: 22px 20px 30px;
+  }
+
+
+  .laravelhero-logo {
+    margin-bottom: 14px;
+  }
+
+
+  .laravelhero-logo-text {
+    font-size: 0.8rem;
+  }
+
+
+  .laravelhero-card-title {
+    font-size: 1.65rem;
+
+    line-height: 1.05;
+
+    max-width: 55%;
+  }
+
+
+  .laravelhero-card-tagline {
+    font-size: 0.68rem;
+
+    max-width: 48%;
+
+    line-height: 1.45;
+  }
+
+
+  .laravelhero-card-photo {
+    top: 15px;
+
+    right: 15px;
+
+    width: 125px;
+
+    height: 125px;
+  }
+
+
+  .laravelhero-icons {
+    gap: 7px;
+  }
+
+
+  .laravelhero-icon {
+    width: 28px;
+
+    height: 28px;
+  }
+
+
+  .laravelhero-card-bottom {
+    width: 100%;
+
+    padding: 22px 20px 24px;
+  }
+
+
+  .laravelhero-outcomes-label {
+    margin-bottom: 14px;
+  }
+
+
+  .laravelhero-outcomes-list {
+    width: 100%;
+
+    gap: 11px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .laravelhero-outcomes-list li {
+    width: 100%;
+
+    font-size: 0.82rem;
+
+    line-height: 1.45;
+
+    align-items: flex-start;
+  }
+
+
+  .laravelhero-check {
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+  }
+
+
+  .laravelhero-btn-enroll {
+    width: 100%;
+
+    min-height: 50px;
+
+    padding: 14px;
+
+    font-size: 0.9rem;
+  }
+}
+
+
+/* =========================================
+              VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .laravelhero-wrapper {
+    width: 100%;
+
+    padding-left: 12px;
+
+    padding-right: 12px;
+
+    gap: 30px;
+  }
+
+
+  .laravelhero-title {
+    font-size: 1.55rem;
+  }
+
+
+  .laravelhero-subtitle {
+    font-size: 0.88rem;
+  }
+
+
+  .laravelhero-paragraph {
+    font-size: 0.82rem;
+  }
+
+
+  .laravelhero-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+  }
+
+
+  .laravelhero-card-top {
+    min-height: 200px;
+
+    padding: 20px 16px 25px;
+  }
+
+
+  .laravelhero-card-title {
+    font-size: 1.4rem;
+
+    max-width: 55%;
+  }
+
+
+  .laravelhero-card-tagline {
+    font-size: 0.62rem;
+
+    max-width: 50%;
+  }
+
+
+  .laravelhero-card-photo {
+    width: 105px;
+
+    height: 105px;
+
+    top: 14px;
+
+    right: 12px;
+  }
+
+
+  .laravelhero-card-bottom {
+    padding: 20px 16px 22px;
+  }
+
+
+  .laravelhero-outcomes-list {
+    gap: 10px;
+  }
+
+
+  .laravelhero-outcomes-list li {
+    font-size: 0.77rem;
+
+    line-height: 1.45;
+  }
+
+
+  .laravelhero-check {
+    width: 18px;
+
+    height: 18px;
+  }
+
+
+  .laravelhero-btn-enroll {
+    width: 100%;
+
+    padding: 13px 10px;
+
+    font-size: 0.85rem;
+  }
+}

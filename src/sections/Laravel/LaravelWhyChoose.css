@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+        LARAVEL WHY CHOOSE
+========================================= */
+
+.laravelwhychoose-wrapper {
+
+  --laravelwhychoose-bg: #070a0b;
+
+  --laravelwhychoose-cyan: #8BF2FE;
+
+  --laravelwhychoose-row-bg: #101516;
+
+  --laravelwhychoose-row-bg-alt: #141a1b;
+
+  --laravelwhychoose-text: #ffffff;
+
+  --laravelwhychoose-muted: #a8b1b3;
+
+  --laravelwhychoose-green: #2ecc71;
+
+  --laravelwhychoose-red: #e74c3c;
+
+
+  background: var(--laravelwhychoose-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 50px 50px 60px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+
+.laravelwhychoose-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+                HEADING
+========================================= */
+
+.laravelwhychoose-heading {
+
+  text-align: center;
+
+  font-size: 2.2rem;
+
+  font-weight: 800;
+
+  color: var(--laravelwhychoose-cyan);
+
+  margin: 0 0 34px;
+}
+
+
+/* =========================================
+                 TABLE
+========================================= */
+
+.laravelwhychoose-table {
+
+  width: 100%;
+
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: var(--laravelwhychoose-row-bg);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25);
+
+   border: 1px solid #133437;  
+}
+
+
+/* =========================================
+                  ROW
+========================================= */
+
+.laravelwhychoose-row {
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr 1fr 1fr 1fr;
+
+  align-items: center;
+}
+
+
+/* Alternate Rows */
+
+.laravelwhychoose-row:nth-child(even) {
+
+  background:
+    var(--laravelwhychoose-row-bg-alt);
+}
+
+
+/* =========================================
+              HEADER ROW
+========================================= */
+
+.laravelwhychoose-row-header {
+
+  background: #172022;
+
+  padding: 22px 0;
+
+  border-bottom:
+    1px solid rgba(139, 242, 254, 0.08);
+}
+
+
+/* =========================================
+             NORMAL ROW
+========================================= */
+
+.laravelwhychoose-row:not(
+  .laravelwhychoose-row-header
+) {
+
+  padding: 18px 0;
+
+  transition:
+    background 0.3s ease;
+}
+
+
+/* =========================================
+                HOVER
+========================================= */
+
+.laravelwhychoose-row:not(
+  .laravelwhychoose-row-header
+):hover {
+
+  background:
+    rgba(139, 242, 254, 0.05);
+}
+
+
+/* =========================================
+                 CELL
+========================================= */
+
+.laravelwhychoose-cell {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0 20px;
+
+  font-size: 0.92rem;
+
+  color: var(--laravelwhychoose-text);
+}
+
+
+/* =========================================
+            FEATURE CELL
+========================================= */
+
+.laravelwhychoose-cell-feature {
+
+  justify-content: flex-start;
+
+  font-weight: 600;
+}
+
+
+.laravelwhychoose-row-header
+.laravelwhychoose-cell-feature {
+
+  font-weight: 700;
+
+  color: var(--laravelwhychoose-cyan);
+}
+
+
+/* =========================================
+             BRAND CELL
+========================================= */
+
+.laravelwhychoose-cell-brand {
+
+  font-weight: 700;
+
+  gap: 8px;
+}
+
+
+/* =========================================
+                 LOGO
+========================================= */
+
+.laravelwhychoose-logo-text {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.laravelwhychoose-logo {
+
+  width: 110px;
+
+  height: auto;
+
+  display: block;
+}
+
+
+/* =========================================
+             YOUTUBE BADGE
+========================================= */
+
+.laravelwhychoose-yt-badge {
+
+  width: 34px;
+
+  height: 24px;
+
+  border-radius: 6px;
+
+  background: #ff0000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================
+             STATUS ICON
+========================================= */
+
+.laravelwhychoose-icon {
+
+  width: 26px;
+
+  height: 26px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* YES */
+
+.laravelwhychoose-icon-yes {
+
+  background:
+    var(--laravelwhychoose-green);
+}
+
+
+/* NO */
+
+.laravelwhychoose-icon-no {
+
+  background:
+    var(--laravelwhychoose-red);
+}
+
+
+/* =========================================
+                 MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .laravelwhychoose-wrapper {
+
+    padding: 45px 15px 50px;
+  }
+
+
+  .laravelwhychoose-heading {
+
+    font-size: 1.7rem;
+
+    margin-bottom: 28px;
+  }
+
+
+  .laravelwhychoose-table {
+
+    border-radius: 14px;
+  }
+
+
+  .laravelwhychoose-cell {
+
+    padding: 0 10px;
+
+    font-size: 0.8rem;
+  }
+
+
+  .laravelwhychoose-logo {
+
+    width: 70px;
+  }
+
+
+  .laravelwhychoose-yt-badge {
+
+    width: 30px;
+
+    height: 22px;
+  }
+
+
+  .laravelwhychoose-icon {
+
+    width: 23px;
+
+    height: 23px;
+  }
+
+}
+
+
+/* =========================================
+              SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .laravelwhychoose-wrapper {
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+  }
+
+
+  .laravelwhychoose-row {
+
+    grid-template-columns:
+      1.5fr 0.8fr 0.8fr 0.9fr;
+  }
+
+
+  .laravelwhychoose-cell {
+
+    padding: 0 5px;
+
+    font-size: 0.68rem;
+  }
+
+
+  .laravelwhychoose-logo {
+
+    width: 55px;
+  }
+
+
+  .laravelwhychoose-icon {
+
+    width: 20px;
+
+    height: 20px;
+  }
+
+
+  .laravelwhychoose-icon svg {
+
+    width: 11px;
+
+    height: 11px;
+  }
+
+}

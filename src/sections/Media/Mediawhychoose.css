@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.mediawhychoose-wrapper {
+  --mediawhychoose-maroon: #8a1f2f;
+  --mediawhychoose-text-muted: #a89ba0;
+
+  background-color: #0a0508;
+  background-image:
+    radial-gradient(ellipse 700px 500px at 50% 15%, rgba(138, 31, 47, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 400px at 20% 80%, rgba(138, 31, 47, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 400px at 85% 70%, rgba(138, 31, 47, 0.15) 0%, transparent 60%);
+  font-family: "Poppins", sans-serif;
+  padding: 45px 30px 0 30px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mediawhychoose-wrapper * {
+  box-sizing: border-box;
+}
+
+.mediawhychoose-heading {
+  font-size:3rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+.mediawhychoose-subtext {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--mediawhychoose-text-muted);
+  margin: 0 0 20px 0;
+}
+
+.mediawhychoose-image {
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.mediawhychoose-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .mediawhychoose-heading {
+    font-size: 1.3rem;
+  }
+  .mediawhychoose-subtext {
+    font-size: 0.8rem;
+  }
+}

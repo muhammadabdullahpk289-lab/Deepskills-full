@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.featuredprojects-wrapper {
+  --fp-bg: #0a0a0a;
+  --fp-maroon: #8a1f2f;
+  --fp-text-muted: #b8b3b8;
+
+  background: var(--fp-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 45px 40px 60px 40px;
+  box-sizing: border-box;
+  background-image: url(../../assets/Media-images/9e0488c3-51ac-4cdc-9e63-574b8dfef4e0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0a0a0a;
+}
+
+.featuredprojects-wrapper * {
+  box-sizing: border-box;
+}
+
+.featuredprojects-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+}
+
+.featuredprojects-subtext {
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--fp-text-muted);
+  max-width: 620px;
+  margin: 0 auto 36px auto;
+  line-height: 1.6;
+}
+
+.featuredprojects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featuredprojects-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.featuredprojects-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--fp-maroon);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+.featuredprojects-image:hover {
+  box-shadow: 0 25px 50px rgba(138, 31, 47, 0.4);
+}
+
+.featuredprojects-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featuredprojects-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #1c1c1c,
+    #1c1c1c 10px,
+    #262626 10px,
+    #262626 20px
+  );
+}
+
+.featuredprojects-caption {
+  margin-top: 16px;
+  background: var(--fp-maroon);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .featuredprojects-grid {
+    grid-template-columns: 1fr;
+  }
+  .featuredprojects-heading {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+              MAIN SECTION
+========================================= */
+
+.wyl-wrapper {
+
+  --wyl-bg: #0a0710;
+
+  --wyl-purple: #9b3dfb;
+
+  --wyl-purple-light: #c084fc;
+
+  --wyl-card-bg: #120c1a;
+
+  --wyl-text-light: #ffffff;
+
+  --wyl-text-muted: #b8aec4;
+
+
+  width: 100%;
+
+  background: var(--wyl-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 60px 50px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+.wyl-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+              HEADING
+========================================= */
+
+.wyl-heading {
+
+  text-align: center;
+
+  font-size: 2.3rem;
+
+  font-weight: 800;
+
+  color: var(--wyl-purple-light);
+
+  margin: 0 0 40px 0;
+}
+
+
+/* =========================================
+              GRID
+========================================= */
+
+.wyl-grid {
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* =========================================
+              CARD
+========================================= */
+
+.wyl-card {
+
+  --mouse-x: 50%;
+
+  --mouse-y: 50%;
+
+
+  position: relative;
+
+  width: 100%;
+
+  min-height: 240px;
+
+
+  background: var(--wyl-card-bg);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 18px;
+
+  padding: 30px 32px;
+
+
+  overflow: hidden;
+
+
+  transform-style: preserve-3d;
+
+  perspective: 1000px;
+
+
+  transition:
+    transform 0.12s ease-out,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+
+  will-change: transform;
+}
+
+
+/* =========================================
+        CURSOR FOLLOW GLOW
+========================================= */
+
+.wyl-glow {
+
+  position: absolute;
+
+  width: 300px;
+
+  height: 300px;
+
+
+  left: var(--mouse-x);
+
+  top: var(--mouse-y);
+
+
+  transform:
+    translate(-50%, -50%);
+
+
+  background:
+    radial-gradient(
+      circle,
+
+      rgba(155, 61, 251, 0.32) 0%,
+
+      rgba(155, 61, 251, 0.18) 25%,
+
+      rgba(155, 61, 251, 0.08) 48%,
+
+      transparent 72%
+    );
+
+
+  pointer-events: none;
+
+
+  opacity: 0;
+
+
+  transition:
+    opacity 0.25s ease;
+
+
+  z-index: 0;
+}
+
+
+/* Glow show */
+
+.wyl-card:hover .wyl-glow {
+
+  opacity: 1;
+}
+
+
+/* =========================================
+        CARD BORDER GLOW
+========================================= */
+
+.wyl-card:hover {
+
+  border-color:
+    rgba(192, 132, 252, 0.45);
+
+
+  box-shadow:
+
+    0 20px 50px
+      rgba(155, 61, 251, 0.22),
+
+    0 0 35px
+      rgba(155, 61, 251, 0.10);
+}
+
+
+/* =========================================
+        CARD HEADER
+========================================= */
+
+.wyl-card-header {
+
+  position: relative;
+
+  z-index: 2;
+
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+
+  gap: 16px;
+}
+
+
+/* =========================================
+        TITLE
+========================================= */
+
+.wyl-card-title {
+
+  margin: 0;
+
+  font-size: 1.35rem;
+
+  font-weight: 800;
+
+  line-height: 1.3;
+
+  color: var(--wyl-text-light);
+}
+
+
+/* =========================================
+        BADGE
+========================================= */
+
+.wyl-badge {
+
+  position: relative;
+
+  z-index: 2;
+
+
+  flex-shrink: 0;
+
+
+  width: 42px;
+
+  height: 42px;
+
+
+  border-radius: 10px;
+
+
+  background:
+    rgba(155, 61, 251, 0.18);
+
+
+  border:
+    1px solid
+    rgba(192, 132, 252, 0.3);
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+  color: var(--wyl-purple-light);
+
+
+  font-weight: 800;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================
+        DIVIDER
+========================================= */
+
+.wyl-divider {
+
+  position: relative;
+
+  z-index: 2;
+
+
+  width: 100%;
+
+  height: 1px;
+
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+
+  margin:
+    18px 0 20px 0;
+}
+
+
+/* =========================================
+        LIST
+========================================= */
+
+.wyl-list {
+
+  position: relative;
+
+  z-index: 2;
+
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* =========================================
+        LIST ITEM
+========================================= */
+
+.wyl-list li {
+
+  display: flex;
+
+  align-items: flex-start;
+
+
+  gap: 10px;
+
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+
+  color:
+    var(--wyl-text-muted);
+
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+        DOT
+========================================= */
+
+.wyl-dot {
+
+  width: 6px;
+
+  height: 6px;
+
+
+  border-radius: 50%;
+
+
+  background:
+    var(--wyl-purple);
+
+
+  margin-top: 6px;
+
+
+  flex-shrink: 0;
+
+
+  box-shadow:
+    0 0 8px
+    rgba(155, 61, 251, 0.7);
+}
+
+
+/* =========================================
+              TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .wyl-wrapper {
+
+    padding:
+      50px 24px;
+  }
+
+
+  .wyl-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 20px;
+  }
+
+
+  .wyl-heading {
+
+    font-size: 1.8rem;
+
+    margin-bottom: 30px;
+  }
+
+
+  /*
+    Touch devices par
+    cursor tilt disable
+  */
+
+  .wyl-card {
+
+    transform:
+      none !important;
+
+    transition:
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+
+  .wyl-card:hover {
+
+    transform:
+      translateY(-3px) !important;
+  }
+}
+
+
+/* =========================================
+              MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .wyl-wrapper {
+
+    padding:
+      40px 16px;
+  }
+
+
+  .wyl-heading {
+
+    font-size: 1.6rem;
+
+    margin-bottom: 25px;
+  }
+
+
+  .wyl-grid {
+
+    gap: 18px;
+  }
+
+
+  .wyl-card {
+
+    padding:
+      24px 20px;
+
+    border-radius:
+      16px;
+
+    min-height:
+      auto;
+  }
+
+
+  .wyl-card-title {
+
+    font-size:
+      1.15rem;
+
+    line-height:
+      1.35;
+  }
+
+
+  .wyl-badge {
+
+    width:
+      38px;
+
+    height:
+      38px;
+  }
+
+
+  .wyl-list {
+
+    gap:
+      12px;
+  }
+
+
+  .wyl-list li {
+
+    font-size:
+      0.84rem;
+
+    line-height:
+      1.5;
+  }
+
+
+  .wyl-glow {
+
+    width:
+      240px;
+
+    height:
+      240px;
+  }
+}
+
+
+/* =========================================
+          VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .wyl-wrapper {
+
+    padding:
+      35px 12px;
+  }
+
+
+  .wyl-heading {
+
+    font-size:
+      1.45rem;
+  }
+
+
+  .wyl-card {
+
+    padding:
+      22px 17px;
+  }
+
+
+  .wyl-card-title {
+
+    font-size:
+      1.05rem;
+  }
+
+
+  .wyl-list li {
+
+    font-size:
+      0.78rem;
+  }
+}

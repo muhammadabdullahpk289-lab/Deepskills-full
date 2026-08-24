@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+        LARAVEL DOWNLOAD SECTION
+========================================= */
+
+.laraveldownload-wrapper {
+
+  --ld-bg: #020607;
+  --ld-cyan: #03e4fe;
+  --ld-cyan-light: #8bf2fe;
+  --ld-text-muted: #a8a3ae;
+
+  position: relative;
+
+  width: 100%;
+
+  background: var(--ld-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 70px 30px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid rgba(3, 228, 254, 0.15);
+}
+
+
+/* =========================================
+        ALL ELEMENTS
+========================================= */
+
+.laraveldownload-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+        BACKGROUND SQUARES
+========================================= */
+
+.laraveldownload-squares {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+        CONTENT
+========================================= */
+
+.laraveldownload-content {
+
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* =========================================
+        HEADING
+========================================= */
+
+.laraveldownload-heading {
+
+  margin: 0 0 18px;
+
+  font-size: 2.1rem;
+
+  font-weight: 800;
+
+  line-height: 1.35;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+        HIGHLIGHT
+========================================= */
+
+.laraveldownload-highlight {
+
+  color: var(--ld-cyan);
+
+  text-shadow:
+    0 0 15px rgba(3, 228, 254, 0.2);
+}
+
+
+/* =========================================
+        SUBTEXT
+========================================= */
+
+.laraveldownload-subtext {
+
+  margin: 0 0 30px;
+
+  font-size: 1rem;
+
+  font-weight: 400;
+
+  color: var(--ld-text-muted);
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+        BUTTON
+========================================= */
+
+.laraveldownload-btn {
+
+  background: var(--ld-cyan);
+
+  color: #001014;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 40px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 0 25px rgba(3, 228, 254, 0.35);
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =========================================
+        BUTTON HOVER
+========================================= */
+
+.laraveldownload-btn:hover {
+
+  background: var(--ld-cyan-light);
+
+  color: #001014;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 40px rgba(3, 228, 254, 0.55);
+}
+
+
+/* =========================================
+        BUTTON ACTIVE
+========================================= */
+
+.laraveldownload-btn:active {
+
+  transform: translateY(0);
+
+}
+
+
+/* =========================================
+        TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .laraveldownload-wrapper {
+
+    padding: 60px 25px;
+
+  }
+
+  .laraveldownload-heading {
+
+    font-size: 1.9rem;
+
+  }
+
+}
+
+
+/* =========================================
+        MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .laraveldownload-wrapper {
+
+    padding: 55px 20px;
+
+  }
+
+  .laraveldownload-heading {
+
+    font-size: 1.5rem;
+
+    line-height: 1.4;
+
+  }
+
+  .laraveldownload-subtext {
+
+    font-size: 0.9rem;
+
+  }
+
+  .laraveldownload-btn {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    padding: 14px 20px;
+
+    font-size: 0.82rem;
+
+  }
+
+}
+
+
+/* =========================================
+        SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .laraveldownload-wrapper {
+
+    padding: 45px 15px;
+
+  }
+
+  .laraveldownload-heading {
+
+    font-size: 1.35rem;
+
+  }
+
+  .laraveldownload-subtext {
+
+    font-size: 0.84rem;
+
+  }
+
+}

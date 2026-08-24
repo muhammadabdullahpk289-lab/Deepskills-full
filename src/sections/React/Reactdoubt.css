@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.reactdoubt-wrapper {
+  --reactdoubt-green: #7cb342;
+
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.reactdoubt-wrapper * {
+  box-sizing: border-box;
+}
+
+.reactdoubt-header {
+  background: #0d0d0d;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.reactdoubt-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.reactdoubt-highlight {
+  color: var(--reactdoubt-green);
+}
+
+.reactdoubt-image {
+  width: 100%;
+}
+
+.reactdoubt-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .reactdoubt-heading {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,87 @@
+.reactroadmap-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  background-color: #07050a;
+
+  color: white;
+
+  box-sizing: border-box;
+
+  background-color: #000000;
+
+  background-image: url(../../assets/React-images/10001.png);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+
+/* =========================
+        TOP TEXT
+========================= */
+
+.reactroadmap-heading {
+  width: 100%;
+  max-width: 850px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+
+.reactroadmap-highlight {
+  color: #7CB342;
+}
+
+/* =========================
+         RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .reactroadmap-wrapper {
+    padding: 50px 20px;
+  }
+
+
+  .reactroadmap-heading {
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+  }
+
+
+  .reactroadmap-image img {
+    border-radius: 12px;
+  }
+}
+
+
+/* =========================
+       SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .reactroadmap-wrapper {
+    padding: 40px 16px;
+  }
+
+
+  .reactroadmap-heading {
+    font-size: 1.7rem;
+  }
+
+
+  .reactroadmap-image img {
+    border-radius: 12px;
+  }
+}

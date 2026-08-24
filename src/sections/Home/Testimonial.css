@@ -1,0 +1,937 @@
+/* =====================================================
+   TESTIMONIAL SECTION
+===================================================== */
+
+.testimonials {
+
+  width: 100%;
+
+  padding: 40px 20px;
+
+  background: #050505;
+
+  color: #fff;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.testimonials h2 {
+
+  margin: 0 0 35px;
+
+  font-size: 72px;
+
+  line-height: 1.1;
+}
+
+
+/* =====================================================
+   WRAPPER
+===================================================== */
+
+.testimonial-wrapper {
+
+  width: 100%;
+
+  max-width: 1160px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   MAIN SLIDER
+===================================================== */
+
+.testimonial-slider {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 580px;
+
+  padding: 20px 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  box-sizing: border-box;
+
+  background: #8f233d;
+
+  clip-path: polygon(
+    0 0,
+    94% 0,
+    100% 12%,
+    100% 100%,
+    6% 100%,
+    0 88%
+  );
+}
+
+
+/* =====================================================
+   WINDOW
+===================================================== */
+
+.testimonial-window {
+
+  width: 78%;
+
+  height: 400px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  position: relative;
+}
+
+
+/* =====================================================
+   TRACK
+===================================================== */
+
+.testimonial-track {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  transition: transform 0.6s ease;
+
+  will-change: transform;
+}
+
+
+/* =====================================================
+   EACH SLIDE
+===================================================== */
+
+.testimonial-slide {
+
+  flex: 0 0 100%;
+
+  width: 100%;
+
+  height: 400px;
+
+  display: flex;
+
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.testimonial-card {
+
+  flex: 1 1 0;
+
+  min-width: 0;
+
+  height: 400px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: #111;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.testimonial-card > img {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =====================================================
+   CARD OVERLAY
+===================================================== */
+
+.testimonial-card::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  height: 40%;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0)
+    );
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   PLAY BUTTON
+===================================================== */
+
+.play-btn {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  width: 52px;
+
+  height: 52px;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: #8f233d;
+
+  color: #fff;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.play-btn:hover {
+
+  transform: translate(-50%, -50%) scale(1.1);
+
+  background: #a92b4b;
+
+  box-shadow:
+    0 0 20px rgba(143, 35, 61, 0.6);
+}
+
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.testimonial-info {
+
+  position: absolute;
+
+  left: 15px;
+
+  bottom: 15px;
+
+  text-align: left;
+
+  z-index: 3;
+}
+
+
+.testimonial-info h3 {
+
+  margin: 0 0 4px;
+
+  font-size: 16px;
+}
+
+
+.testimonial-info p {
+
+  margin: 0;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   ARROWS
+===================================================== */
+
+.testimonial-arrow {
+
+  width: 45px;
+
+  height: 45px;
+
+  padding: 5px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  z-index: 20;
+}
+
+
+.testimonial-arrow img {
+
+  width: 35px;
+
+  height: 35px;
+
+  display: block;
+
+  transition: 0.25s ease;
+}
+
+
+.testimonial-arrow:hover {
+
+  opacity: 0.7;
+}
+
+
+.testimonial-arrow:hover img {
+
+  transform: scale(1.08);
+}
+
+
+/* =====================================================
+   DOTS
+===================================================== */
+
+.dots {
+
+  position: relative;
+
+  z-index: 10;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: -25px;
+}
+
+
+.dots span {
+
+  width: 8px;
+
+  height: 8px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: #5d1b2c;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.dots span.active {
+
+  background: #000;
+
+  transform: scale(1.25);
+}
+
+
+/* =====================================================
+   VIDEO OVERLAY
+===================================================== */
+
+.video-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  width: 100vw;
+
+  height: 100dvh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  z-index: 999999;
+
+  box-sizing: border-box;
+
+  animation: videoOverlayIn 0.3s ease;
+}
+
+
+/* =====================================================
+   VIDEO MODAL
+===================================================== */
+
+.video-modal {
+
+  position: relative;
+
+  width: min(900px, 95vw);
+
+  aspect-ratio: 16 / 9;
+
+  background: #000;
+
+  border-radius: 18px;
+
+  overflow: visible;
+
+  box-shadow:
+    0 0 30px rgba(255, 30, 30, 0.20),
+    0 0 70px rgba(255, 30, 30, 0.10);
+
+  animation: videoModalIn 0.35s ease;
+}
+
+
+/* =====================================================
+   LOCAL VIDEO
+===================================================== */
+
+.video-modal video {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  background: #000;
+
+  border-radius: 18px;
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.video-close {
+
+  position: absolute;
+
+  top: -48px;
+
+  right: 0;
+
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  color: #fff;
+
+  font-size: 27px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: 0.3s ease;
+}
+
+
+.video-close:hover {
+
+  background: #8f233d;
+
+  border-color: #8f233d;
+
+  transform: rotate(90deg);
+}
+
+
+/* =====================================================
+   VIDEO ANIMATION
+===================================================== */
+
+@keyframes videoOverlayIn {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
+}
+
+
+@keyframes videoModalIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: scale(0.92);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .testimonials {
+
+    padding: 30px 15px;
+  }
+
+
+  .testimonials h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .testimonial-slider {
+
+    height: 500px;
+
+    padding: 15px;
+
+    gap: 15px;
+  }
+
+
+  .testimonial-window {
+
+    width: calc(100% - 100px);
+
+    height: 360px;
+  }
+
+
+  .testimonial-slide {
+
+    height: 360px;
+
+    gap: 0;
+  }
+
+
+  .testimonial-slide .second-card {
+
+    display: none;
+  }
+
+
+  .testimonial-card {
+
+    width: 100%;
+
+    flex: 0 0 100%;
+
+    height: 360px;
+  }
+
+
+  .testimonial-arrow {
+
+    width: 40px;
+
+    height: 40px;
+  }
+
+
+  .testimonial-arrow img {
+
+    width: 30px;
+
+    height: 30px;
+  }
+
+
+  /* VIDEO */
+
+  .video-modal {
+
+    width: 90vw;
+
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .testimonials {
+
+    padding: 25px 8px;
+  }
+
+
+  .testimonials h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .testimonial-slider {
+
+    height: 430px;
+
+    padding: 10px 6px;
+
+    gap: 5px;
+  }
+
+
+  .testimonial-window {
+
+    width: calc(100% - 65px);
+
+    height: 370px;
+  }
+
+
+  .testimonial-slide {
+
+    height: 370px;
+
+    width: 100%;
+
+    flex: 0 0 100%;
+
+    gap: 0;
+  }
+
+
+  .testimonial-slide .second-card {
+
+    display: none;
+  }
+
+
+  .testimonial-card {
+
+    width: 100%;
+
+    min-width: 100%;
+
+    flex: 0 0 100%;
+
+    height: 370px;
+
+    border-radius: 12px;
+  }
+
+
+  /* PLAY */
+
+  .play-btn {
+
+    width: 48px;
+
+    height: 48px;
+
+    font-size: 16px;
+  }
+
+
+  /* INFO */
+
+  .testimonial-info {
+
+    left: 13px;
+
+    bottom: 13px;
+  }
+
+
+  .testimonial-info h3 {
+
+    font-size: 15px;
+  }
+
+
+  .testimonial-info p {
+
+    font-size: 11px;
+  }
+
+
+  /* ARROWS */
+
+  .testimonial-arrow {
+
+    width: 30px;
+
+    height: 40px;
+
+    padding: 2px;
+  }
+
+
+  .testimonial-arrow img {
+
+    width: 26px;
+
+    height: 26px;
+  }
+
+
+  /* DOTS */
+
+  .dots {
+
+    margin-top: -20px;
+
+    gap: 8px;
+  }
+
+
+  .dots span {
+
+    width: 7px;
+
+    height: 7px;
+  }
+
+
+  /* VIDEO */
+
+  .video-overlay {
+
+    padding: 15px;
+  }
+
+
+  .video-modal {
+
+    width: 100%;
+
+    border-radius: 12px;
+  }
+
+
+  .video-modal video {
+
+    border-radius: 12px;
+  }
+
+
+  .video-close {
+
+    top: -48px;
+
+    right: 0;
+
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 25px;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .testimonials {
+
+    padding: 20px 6px;
+  }
+
+
+  .testimonials h2 {
+
+    font-size: 25px;
+  }
+
+
+  .testimonial-slider {
+
+    height: 390px;
+
+    padding: 8px 4px;
+
+    gap: 2px;
+  }
+
+
+  .testimonial-window {
+
+    width: calc(100% - 60px);
+
+    height: 345px;
+  }
+
+
+  .testimonial-slide {
+
+    height: 345px;
+  }
+
+
+  .testimonial-card {
+
+    height: 345px;
+  }
+
+
+  .testimonial-arrow {
+
+    width: 28px;
+
+    height: 35px;
+  }
+
+
+  .testimonial-arrow img {
+
+    width: 24px;
+
+    height: 24px;
+  }
+
+
+  /* VIDEO */
+
+  .video-modal {
+
+    width: 96vw;
+  }
+
+
+  .video-close {
+
+    top: -44px;
+
+    width: 34px;
+
+    height: 34px;
+
+    font-size: 23px;
+  }
+
+}

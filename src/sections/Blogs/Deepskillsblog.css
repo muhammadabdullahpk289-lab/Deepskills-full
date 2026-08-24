@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.dsblog-wrapper {
+  --dsblog-bg: #0a0a0a;
+  --dsblog-maroon: #a6293f;
+  --dsblog-card-bg: #141414;
+  --dsblog-text-light: #ffffff;
+  --dsblog-text-muted: #9a9a9a;
+
+  background: var(--dsblog-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 50px 40px 60px 40px;
+  box-sizing: border-box;
+  margin-top: -100px;
+}
+
+.dsblog-wrapper * {
+  box-sizing: border-box;
+}
+
+.dsblog-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  margin-top: 110px;
+}
+
+.dsblog-subtext {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #d0d0d0;
+  margin: 0 0 28px 0;
+}
+
+.dsblog-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.dsblog-tab {
+  background: #1a1a1a;
+  border: 1px solid rgba(166, 41, 63, 0.4);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dsblog-tab:hover {
+  border-color: var(--dsblog-maroon);
+}
+
+.dsblog-tab-active {
+  background: var(--dsblog-maroon);
+  border-color: var(--dsblog-maroon);
+}
+
+.dsblog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+.dsblog-card {
+  background: var(--dsblog-card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.dsblog-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(166, 41, 63, 0.5);
+}
+
+.dsblog-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.dsblog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dsblog-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 20%, #b5324a 0%, #5a1420 45%, #1a0a0d 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dsblog-image-placeholder span {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.dsblog-content {
+  padding: 20px 22px 22px 22px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dsblog-category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--dsblog-maroon);
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.dsblog-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dsblog-text-light);
+  line-height: 1.35;
+  margin: 0 0 10px 0;
+}
+
+.dsblog-desc {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--dsblog-text-muted);
+  line-height: 1.5;
+  margin: 0 0 18px 0;
+  flex-grow: 1;
+}
+
+.dsblog-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  color: var(--dsblog-text-muted);
+}
+
+.dsblog-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--dsblog-maroon);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+}
+
+.dsblog-author {
+  color: #d0d0d0;
+  font-weight: 600;
+}
+
+.dsblog-dot {
+  color: #555;
+}
+
+.dsblog-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dsblog-page-btn {
+  background: #1a1a1a;
+  border: 1px solid rgba(166, 41, 63, 0.4);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.dsblog-page-btn:hover:not(:disabled) {
+  border-color: var(--dsblog-maroon);
+}
+
+.dsblog-page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dsblog-page-num {
+  background: #1a1a1a;
+  border: 1px solid rgba(166, 41, 63, 0.4);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dsblog-page-num:hover {
+  border-color: var(--dsblog-maroon);
+}
+
+.dsblog-page-num-active {
+  background: var(--dsblog-maroon);
+  border-color: var(--dsblog-maroon);
+}
+
+@media (max-width: 900px) {
+  .dsblog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dsblog-grid {
+    grid-template-columns: 1fr;
+  }
+  .dsblog-heading {
+    font-size: 1.7rem;
+  }
+}

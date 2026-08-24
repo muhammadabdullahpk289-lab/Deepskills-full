@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.lo-wrapper {
+  --lo-bg: #0a0710;
+  --lo-purple: #9b3dfb;
+  --lo-purple-light: #c084fc;
+  --lo-card-bg: #f0eeee;
+  --lo-text-dark: #1a1a1a;
+
+  background: var(--lo-bg);
+  background-image: radial-gradient(
+      circle at 15% 90%,
+      rgba(155, 61, 251, 0.25) 0%,
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 10%, rgba(60, 30, 90, 0.35) 0%, transparent 50%);
+  font-family: "Poppins", sans-serif;
+  padding: 50px 50px 60px 50px;
+  box-sizing: border-box;
+  background-image: url(../../assets/Graphicdesign-images/636b9749-2e5d-4b84-aec2-6242d39aebef.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lo-wrapper * {
+  box-sizing: border-box;
+}
+
+.lo-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--lo-purple-light);
+  margin: 0 0 36px 0;
+}
+
+.lo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.lo-card {
+  background: var(--lo-card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.lo-image {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #d9d5d5;
+  overflow: hidden;
+}
+
+.lo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lo-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #d4d0d0,
+    #d4d0d0 10px,
+    #e4e0e0 10px,
+    #e4e0e0 20px
+  );
+}
+
+.lo-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--lo-text-dark);
+  line-height: 1.4;
+  padding: 16px 18px 14px 18px;
+  flex-grow: 1;
+}
+
+.lo-divider {
+  height: 1px;
+  background: #cfcaca;
+  margin: 0 18px 16px 18px;
+}
+
+@media (max-width: 900px) {
+  .lo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .lo-grid {
+    grid-template-columns: 1fr;
+  }
+  .lo-heading {
+    font-size: 1.7rem;
+  }
+}

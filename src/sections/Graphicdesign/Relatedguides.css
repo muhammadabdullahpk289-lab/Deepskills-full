@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.rg-wrapper {
+  --rg-bg: #050505;
+  --rg-red: #e6425a;
+  --rg-text-light: #ffffff;
+  --rg-text-muted: #8f8a90;
+  --rg-border: #3a1e26;
+
+  background: var(--rg-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 50px 60px 70px 60px;
+  box-sizing: border-box;
+}
+
+.rg-wrapper * {
+  box-sizing: border-box;
+}
+
+.rg-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--rg-red);
+  margin-bottom: 10px;
+}
+
+.rg-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--rg-text-light);
+  margin: 0 0 32px 0;
+}
+
+.rg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.rg-card {
+  background: #0d0d0d;
+  border: 1px solid var(--rg-border);
+  border-radius: 12px;
+  padding: 24px 26px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.rg-card:hover {
+  border-color: var(--rg-red);
+  transform: translateY(-3px);
+}
+
+.rg-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--rg-text-light);
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+}
+
+.rg-meta {
+  font-size: 0.85rem;
+  color: var(--rg-text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .rg-grid {
+    grid-template-columns: 1fr;
+  }
+  .rg-heading {
+    font-size: 1.9rem;
+  }
+}

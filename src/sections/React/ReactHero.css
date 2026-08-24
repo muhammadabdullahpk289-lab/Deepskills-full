@@ -1,0 +1,826 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* =========================================
+          REACT HERO SECTION
+========================================= */
+
+.reacthero-wrapper {
+  --reacthero-bg: #000000;
+  --reacthero-green: #97bd4b;
+  --reacthero-text-light: #f2f0f5;
+  --reacthero-text-muted: #c9c4d1;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--reacthero-bg);
+
+  background-image:
+    linear-gradient(
+      rgba(151, 189, 75, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(151, 189, 75, 0.06) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 12% 25%,
+      rgba(151, 189, 75, 0.16) 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(151, 189, 75, 0.1) 0%,
+      transparent 40%
+    );
+
+  background-size:
+    42px 42px,
+    42px 42px,
+    100% 100%,
+    100% 100%;
+
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0;
+
+  background-repeat:
+    repeat,
+    repeat,
+    no-repeat,
+    no-repeat;
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 70px 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(360px, 460px);
+
+  gap: 60px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+
+  margin-top: -100px;
+}
+
+
+/* =========================================
+          GLOBAL BOX SIZING
+========================================= */
+
+.reacthero-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+          LEFT COLUMN
+========================================= */
+
+.reacthero-left {
+  width: 100%;
+  max-width: 100%;
+
+  color: var(--reacthero-text-light);
+
+  margin-top: 100px;
+
+  min-width: 0;
+}
+
+
+
+/* =========================================
+              TITLE
+========================================= */
+
+.reacthero-title {
+  width: 100%;
+
+  font-size: 3.2rem;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  margin: 0 0 20px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+          GREEN HIGHLIGHT
+========================================= */
+
+.reacthero-highlight {
+  color: #97bd4b;
+}
+
+
+/* =========================================
+              SUBTITLE
+========================================= */
+
+.reacthero-subtitle {
+  width: 100%;
+
+  font-size: 1.3rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  margin: 0 0 24px;
+
+  color: var(--reacthero-text-light);
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+              DIVIDER
+========================================= */
+
+.reacthero-divider {
+  width: 100%;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  margin-bottom: 24px;
+}
+
+
+/* =========================================
+              PARAGRAPH
+========================================= */
+
+.reacthero-paragraph {
+  width: 100%;
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+
+  color: var(--reacthero-text-muted);
+
+  margin: 0 0 18px;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+              START BUTTON
+========================================= */
+
+.reacthero-btn-start {
+  margin-top: 12px;
+
+  background: #97bd4b;
+
+  color: #071014;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 36px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(151, 189, 75, 0.35);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+          START BUTTON HOVER
+========================================= */
+
+.reacthero-btn-start:hover {
+  background: #97bd4b;
+
+  color: #000000;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(151, 189, 75, 0.5);
+}
+
+
+/* =========================================
+          START BUTTON ACTIVE
+========================================= */
+
+.reacthero-btn-start:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+          RIGHT COLUMN
+========================================= */
+
+.reacthero-right {
+  width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+
+/* =========================================
+              CARD
+========================================= */
+
+.reacthero-card {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 450px;
+
+  height: auto;
+
+  min-height: 500px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.5);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================
+          CARD HOVER
+========================================= */
+
+.reacthero-card:hover {
+  box-shadow:
+    0 35px 75px rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================
+              CARD TOP
+========================================= */
+
+.reacthero-card-top {
+  position: relative;
+
+  width: 100%;
+
+  padding: 28px 28px 40px;
+
+  background-image:
+    url("../../assets/React-images/10006.svg");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
+
+  min-height: 230px;
+}
+
+
+/* =========================================
+              CARD BOTTOM
+========================================= */
+
+.reacthero-card-bottom {
+  width: 100%;
+
+  padding: 26px 28px 30px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+          OUTCOMES TITLE
+========================================= */
+
+.reacthero-outcomes-label {
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #8a8a8a;
+
+  margin-bottom: 16px;
+}
+
+
+/* =========================================
+          OUTCOMES LIST
+========================================= */
+
+.reacthero-outcomes-list {
+  width: 100%;
+
+  list-style: none;
+
+  margin: 0 0 26px;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.reacthero-outcomes-list li {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+
+  color: #222222;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+              CHECK
+========================================= */
+
+.reacthero-check {
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #97bd4b;
+
+  color: #071014;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+            ENROLL BUTTON
+========================================= */
+
+.reacthero-btn-enroll {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: block;
+
+  background: #97bd4b;
+
+  color: #071014;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 16px 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(151, 189, 75, 0.35);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+            ENROLL HOVER
+========================================= */
+
+.reacthero-btn-enroll:hover {
+  background: #97bd4b;
+
+  color: #000000;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(151, 189, 75, 0.5);
+}
+
+
+/* =========================================
+            ENROLL ACTIVE
+========================================= */
+
+.reacthero-btn-enroll:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+              TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .reacthero-wrapper {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(320px, 400px);
+
+    gap: 35px;
+
+    padding: 60px 35px;
+  }
+
+
+  .reacthero-left {
+    margin-top: 60px;
+  }
+
+
+  .reacthero-right {
+    margin-top: 60px;
+  }
+
+
+  .reacthero-title {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* =========================================
+              MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .reacthero-wrapper {
+    width: 100%;
+
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 50px 24px 60px;
+
+    align-items: start;
+  }
+
+
+  .reacthero-left {
+    width: 100%;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    min-width: 0;
+  }
+
+
+  .reacthero-title {
+    width: 100%;
+
+    font-size: 2rem;
+
+    line-height: 1.25;
+  }
+
+
+  .reacthero-subtitle {
+    width: 100%;
+
+    font-size: 1rem;
+  }
+
+
+  .reacthero-divider {
+    width: 100%;
+  }
+
+
+  .reacthero-paragraph {
+    width: 100%;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+  }
+
+
+  .reacthero-btn-start {
+    margin-top: 8px;
+  }
+
+
+  .reacthero-right {
+    width: 100%;
+
+    margin-top: 0;
+
+    justify-content: center;
+
+    min-width: 0;
+  }
+
+
+  .reacthero-card {
+    width: 100%;
+
+    max-width: 450px;
+
+    height: auto;
+
+    min-height: 0;
+  }
+}
+
+
+/* =========================================
+          SMALL MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .reacthero-wrapper {
+    width: 100%;
+
+    padding: 40px 16px 50px;
+
+    gap: 35px;
+  }
+
+
+  .reacthero-title {
+    font-size: 1.75rem;
+
+    margin-top: 100px;
+
+    line-height: 1.25;
+  }
+
+
+  .reacthero-subtitle {
+    font-size: 0.92rem;
+
+    line-height: 1.6;
+  }
+
+
+  .reacthero-paragraph {
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+  }
+
+
+  .reacthero-btn-start {
+    width: 100%;
+
+    padding: 14px 20px;
+  }
+
+
+  /* =========================
+          CARD
+  ========================= */
+
+  .reacthero-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    border-radius: 16px;
+  }
+
+
+  .reacthero-card-top {
+    width: 100%;
+
+    min-height: 220px;
+
+    padding: 22px 20px 30px;
+  }
+
+
+  .reacthero-card-bottom {
+    width: 100%;
+
+    padding: 22px 20px 24px;
+  }
+
+
+  .reacthero-outcomes-label {
+    margin-bottom: 14px;
+  }
+
+
+  .reacthero-outcomes-list {
+    width: 100%;
+
+    gap: 11px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .reacthero-outcomes-list li {
+    width: 100%;
+
+    font-size: 0.82rem;
+
+    line-height: 1.45;
+
+    align-items: flex-start;
+  }
+
+
+  .reacthero-check {
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+  }
+
+
+  .reacthero-btn-enroll {
+    width: 100%;
+
+    min-height: 50px;
+
+    padding: 14px;
+
+    font-size: 0.9rem;
+  }
+}
+
+
+/* =========================================
+        VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .reacthero-wrapper {
+    width: 100%;
+
+    padding-left: 12px;
+
+    padding-right: 12px;
+
+    gap: 30px;
+  }
+
+
+  .reacthero-title {
+    font-size: 1.55rem;
+  }
+
+
+  .reacthero-subtitle {
+    font-size: 0.88rem;
+  }
+
+
+  .reacthero-paragraph {
+    font-size: 0.82rem;
+  }
+
+
+  .reacthero-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+  }
+
+
+  .reacthero-card-top {
+    min-height: 200px;
+
+    padding: 20px 16px 25px;
+  }
+
+
+  .reacthero-card-bottom {
+    padding: 20px 16px 22px;
+  }
+
+
+  .reacthero-outcomes-list {
+    gap: 10px;
+  }
+
+
+  .reacthero-outcomes-list li {
+    font-size: 0.77rem;
+
+    line-height: 1.45;
+  }
+
+
+  .reacthero-check {
+    width: 18px;
+
+    height: 18px;
+  }
+
+
+  .reacthero-btn-enroll {
+    width: 100%;
+
+    padding: 13px 10px;
+
+    font-size: 0.85rem;
+  }
+}

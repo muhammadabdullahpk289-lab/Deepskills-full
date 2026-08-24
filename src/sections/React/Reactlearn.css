@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.reactlearn-wrapper {
+  --reactlearn-bg: #0a0a0a;
+  --reactlearn-green: #6bbf3f;
+  --reactlearn-dark-text: #1a1a1a;
+
+  background: var(--reactlearn-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 50px 50px 60px 50px;
+  box-sizing: border-box;
+}
+
+.reactlearn-wrapper * {
+  box-sizing: border-box;
+}
+
+.reactlearn-heading {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 800;
+  color: var(--reactlearn-green);
+  margin: 0 0 36px 0;
+}
+
+.reactlearn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.reactlearn-card {
+  border-radius: 14px;
+  padding: 32px 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.reactlearn-card-orange {
+  background: linear-gradient(160deg, #f2b90f 0%, #d9720d 100%);
+  color: var(--reactlearn-dark-text);
+}
+
+.reactlearn-card-blue {
+  background: linear-gradient(160deg, #2f6fc9 0%, #1a7fd6 100%);
+  color: #ffffff;
+}
+
+.reactlearn-card-rose {
+  background: linear-gradient(160deg, #e08c86 0%, #a9645f 100%);
+  color: #ffffff;
+}
+
+.reactlearn-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+
+.reactlearn-underline {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 22px;
+}
+
+.reactlearn-card-orange .reactlearn-underline {
+  background: rgba(26, 20, 10, 0.4);
+}
+
+.reactlearn-card-blue .reactlearn-underline,
+.reactlearn-card-rose .reactlearn-underline {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.reactlearn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reactlearn-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.reactlearn-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.reactlearn-card-orange .reactlearn-dot {
+  background: #1a1a1a;
+}
+
+.reactlearn-card-blue .reactlearn-dot,
+.reactlearn-card-rose .reactlearn-dot {
+  background: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .reactlearn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .reactlearn-heading {
+    font-size: 1.7rem;
+  }
+}

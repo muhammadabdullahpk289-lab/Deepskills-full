@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.reactfeatures-wrapper {
+  --reactfeatures-bg: #000000;
+  --reactfeatures-green: #97bd4b;
+  --reactfeatures-border: #97bd4b;
+  --reactfeatures-card-bg: #151515;
+  --reactfeatures-text-light: #ffffff;
+  --reactfeatures-text-muted: #9a9a9a;
+
+  width: 100%;
+  background: var(--reactfeatures-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 60px 40px 70px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.reactfeatures-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+              HEADING
+========================================= */
+
+.reactfeatures-heading {
+  text-align: center;
+
+  font-size: 2.9rem;
+
+  font-weight: 800;
+
+  color: var(--reactfeatures-green);
+
+  margin: 0 0 35px;
+}
+
+
+/* =========================================
+                MAIN BOX
+========================================= */
+
+.reactfeatures-box {
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  background:
+    linear-gradient(
+      135deg,
+      #202020 0%,
+      #101010 100%
+    );
+
+  border: 2px solid var(--reactfeatures-border);
+
+  border-radius: 22px;
+
+  padding: 45px 50px;
+}
+
+
+/* =========================================
+                 GRID
+========================================= */
+
+.reactfeatures-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  column-gap: 35px;
+
+  row-gap: 42px;
+}
+
+
+/* =========================================
+                  ITEM
+========================================= */
+
+.reactfeatures-item {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-width: 0;
+}
+
+
+/* =========================================
+                  ICON
+========================================= */
+
+.reactfeatures-icon {
+  width: 50px;
+
+  height: 50px;
+
+  min-width: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+
+/* =========================================
+             ICON HOVER
+========================================= */
+
+.reactfeatures-item:hover .reactfeatures-icon {
+  transform: translateY(-4px) scale(1.05);
+
+  background: var(--reactfeatures-green);
+
+  box-shadow:
+    0 8px 22px rgba(151, 189, 75, 0.35);
+}
+
+
+/* =========================================
+             ICON SVG / IMG
+========================================= */
+
+.reactfeatures-icon svg,
+.reactfeatures-icon img {
+  width: 24px;
+
+  height: 24px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================================
+                 CONTENT
+========================================= */
+
+.reactfeatures-item > div:not(.reactfeatures-icon) {
+  min-width: 0;
+}
+
+
+/* =========================================
+                 TITLE
+========================================= */
+
+.reactfeatures-title {
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  line-height: 1.35;
+
+  color: var(--reactfeatures-text-light);
+
+  margin: 0 0 4px;
+}
+
+
+/* =========================================
+               SUBTITLE
+========================================= */
+
+.reactfeatures-subtitle {
+  font-size: 0.82rem;
+
+  font-weight: 500;
+
+  line-height: 1.45;
+
+  color: var(--reactfeatures-text-muted);
+
+  margin: 0;
+}
+
+
+/* =========================================
+                 TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .reactfeatures-wrapper {
+    padding: 55px 30px 65px;
+  }
+
+  .reactfeatures-box {
+    padding: 38px 30px;
+  }
+
+  .reactfeatures-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 30px;
+
+    row-gap: 35px;
+  }
+
+  .reactfeatures-item {
+    gap: 13px;
+  }
+
+  .reactfeatures-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+  }
+
+  .reactfeatures-icon svg,
+  .reactfeatures-icon img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
+/* =========================================
+                 MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .reactfeatures-wrapper {
+    padding: 45px 18px 55px;
+  }
+
+  .reactfeatures-heading {
+    font-size: 1.8rem;
+
+    margin-bottom: 28px;
+  }
+
+  .reactfeatures-box {
+    padding: 30px 22px;
+
+    border-radius: 18px;
+  }
+
+  .reactfeatures-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 28px;
+  }
+
+  .reactfeatures-item {
+    width: 100%;
+
+    gap: 14px;
+
+    align-items: center;
+  }
+
+  .reactfeatures-icon {
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+  }
+
+  .reactfeatures-title {
+    font-size: 0.95rem;
+  }
+
+  .reactfeatures-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* =========================================
+             SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .reactfeatures-wrapper {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .reactfeatures-heading {
+    font-size: 1.6rem;
+  }
+
+  .reactfeatures-box {
+    padding: 25px 17px;
+  }
+
+  .reactfeatures-item {
+    gap: 12px;
+  }
+
+  .reactfeatures-icon {
+    width: 44px;
+
+    height: 44px;
+
+    min-width: 44px;
+  }
+
+  .reactfeatures-icon svg,
+  .reactfeatures-icon img {
+    width: 20px;
+
+    height: 20px;
+  }
+
+  .reactfeatures-title {
+    font-size: 0.9rem;
+  }
+
+  .reactfeatures-subtitle {
+    font-size: 0.75rem;
+  }
+}

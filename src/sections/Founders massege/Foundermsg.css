@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap");
+
+/* ================================
+        MAIN SECTION
+================================ */
+
+.fm-wrapper {
+  width: 100%;
+  padding: 55px 20px;
+  height: 950px;
+  margin-top: -100px;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.fm-wrapper * {
+  box-sizing: border-box;
+}
+
+/* ================================
+        HEADING
+================================ */
+
+.fm-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 100px;
+}
+
+.fm-header h1 {
+  margin: 0;
+
+ font-family: "Asimovian", sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.divider-line {
+  width: 25%;
+  height: 3px;
+  margin: 0 auto;
+  align-self: center;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+ 
+
+.fm-header p {
+  margin: 10px 0 0;
+
+  color: #B5B4B4;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* ================================
+        SINGLE CARD
+================================ */
+
+.fm-card {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  min-height: 610px;
+
+  padding: 45px 50px;
+
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+
+  gap: 55px;
+
+  background-color: #6e1f2f;
+
+  background-image: url("../../assets/FondersMessage-images/f1c0d683-fe55-43d8-8f4b-8c151e12c546.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+}
+
+/* Dark overlay */
+
+.fm-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(50, 10, 20, 0.25);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+/* ================================
+        FOUNDER
+================================ */
+
+.fm-founder {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.fm-photo {
+  width: 210px;
+  height: 250px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #222;
+
+  margin-bottom: 18px;
+
+  border: 2px solid rgba(255, 255, 255, 0.15);
+
+  flex-shrink: 0;
+}
+
+.fm-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.fm-founder h3 {
+  margin: 0;
+
+  font-family: "Orbitron", sans-serif;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+
+.fm-founder span {
+  margin-top: 7px;
+
+  font-size: 14px;
+
+  color: #C7A2A9;
+}
+
+/* ================================
+        MESSAGE
+================================ */
+
+.fm-message {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.fm-message h2 {
+  margin: 0 0 14px;
+
+  font-size: 28px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.fm-message p {
+  margin: 0 0 15px;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #f0dede;
+}
+
+/* Main quote */
+
+.fm-message .fm-quote {
+  margin-bottom: 20px;
+
+  font-size: 17px;
+
+  line-height: 1.55;
+
+  font-weight: 600;
+
+  font-style: italic;
+
+  color: #C7A2A9;
+}
+
+/* ================================
+        CLOSING
+================================ */
+
+.fm-closing {
+  margin-top: 8px;
+
+  padding-left: 16px;
+
+  border-left: 3px solid #4fb3e8;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  font-weight: 600;
+
+  font-style: italic;
+
+  color: #ffffff;
+}
+
+/* ================================
+        TABLET
+================================ */
+
+@media (max-width: 850px) {
+
+  .fm-card {
+    min-height: auto;
+
+    grid-template-columns: 210px minmax(0, 1fr);
+
+    gap: 35px;
+
+    padding: 35px;
+
+  }
+
+  .fm-photo {
+    width: 180px;
+    height: 220px;
+  }
+
+  .fm-message h2 {
+    font-size: 24px;
+  }
+
+  .fm-message p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .fm-message .fm-quote {
+    font-size: 15px;
+  }
+}
+
+/* ================================
+        MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+  .fm-wrapper {
+    padding: 45px 15px;
+  }
+
+  .fm-header {
+    margin-bottom: 28px;
+  }
+
+  .fm-header h1 {
+    font-size: 26px;
+  }
+
+  .fm-header p {
+    font-size: 13px;
+  }
+
+  .fm-card {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 30px 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    border-radius: 18px;
+  }
+
+  /* Founder image */
+
+  .fm-founder {
+    width: 100%;
+  }
+
+  .fm-photo {
+    width: 100%;
+    max-width: 240px;
+
+    height: 280px;
+
+    margin-bottom: 15px;
+  }
+
+  .fm-founder h3 {
+    font-size: 17px;
+  }
+
+  .fm-founder span {
+    font-size: 13px;
+  }
+
+  /* Text */
+
+  .fm-message {
+    width: 100%;
+  }
+
+  .fm-message h2 {
+    font-size: 23px;
+
+    margin-bottom: 13px;
+  }
+
+  .fm-message p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 14px;
+  }
+
+  .fm-message .fm-quote {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  .fm-closing {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-top: 5px;
+  }
+}
+
+/* ================================
+        SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .fm-wrapper {
+    padding: 40px 12px;
+  }
+
+  .fm-card {
+    padding: 25px 17px;
+
+    gap: 25px;
+  }
+
+  .fm-header h1 {
+    font-size: 23px;
+  }
+
+  .fm-photo {
+    max-width: 210px;
+    height: 250px;
+  }
+
+  .fm-message h2 {
+    font-size: 21px;
+  }
+
+  .fm-message p {
+    font-size: 13px;
+  }
+
+  .fm-message .fm-quote {
+    font-size: 14px;
+  }
+
+  .fm-closing {
+    font-size: 13px;
+  }
+}

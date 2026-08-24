@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.mediaawards-wrapper {
+  --ma-bg: #0a0508;
+  --ma-maroon: #8a1f2f;
+  --ma-text-muted: #6fa8dc;
+
+  position: relative;
+  background: var(--ma-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 45px 0 60px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(../../assets/Media-images/4e1b6fb4-4996-435b-9db4-3a7a1f900518.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mediaawards-wrapper * {
+  box-sizing: border-box;
+}
+
+.mediaawards-circuit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mediaawards-header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.mediaawards-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+}
+
+.mediaawards-subtext {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #b3a5a5;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.mediaawards-track-outer {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.mediaawards-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  padding: 0 24px;
+  animation: mediaawards-scroll 22s linear infinite;
+}
+
+.mediaawards-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes mediaawards-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.mediaawards-card {
+  flex-shrink: 0;
+  width: 380px;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  min-height: 120px;
+}
+
+.mediaawards-image {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.mediaawards-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mediaawards-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 130px;
+  background: repeating-linear-gradient(
+    45deg,
+    #d8cfc2,
+    #d8cfc2 10px,
+    #e6ded3 10px,
+    #e6ded3 20px
+  );
+}
+
+.mediaawards-text {
+  flex: 1;
+  background: var(--ma-maroon);
+  color: #ffffff;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mediaawards-text h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.mediaawards-text p {
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  color: #f0dede;
+}
+
+@media (max-width: 600px) {
+  .mediaawards-heading {
+    font-size: 1.6rem;
+  }
+  .mediaawards-card {
+    width: 300px;
+  }
+  .mediaawards-image {
+    width: 100px;
+  }
+}

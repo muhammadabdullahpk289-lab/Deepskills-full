@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+          LARAVEL LIST 1
+========================================= */
+
+.laravellist1-wrapper {
+
+  width: 100%;
+
+  background: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+.laravellist1-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+                HEADING
+========================================= */
+
+.laravellist1-header {
+
+  width: 100%;
+
+  background: #05090a;
+
+  padding: 25px 20px;
+
+  text-align: center;
+}
+
+
+.laravellist1-heading {
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 2.5rem;
+
+  font-weight: 800;
+
+  line-height: 1.3;
+}
+
+
+.laravellist1-highlight {
+
+  color: #8BF2FE;
+}
+
+
+/* =========================================
+                  IMAGE
+========================================= */
+
+.laravellist1-image {
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px;
+}
+
+
+.laravellist1-image img {
+
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+                  TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .laravellist1-heading {
+
+    font-size: 1.8rem;
+  }
+
+
+  .laravellist1-image {
+
+    padding: 25px 18px;
+  }
+
+}
+
+
+/* =========================================
+                  MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .laravellist1-header {
+
+    padding: 20px 15px;
+  }
+
+
+  .laravellist1-heading {
+
+    font-size: 1.55rem;
+  }
+
+
+  .laravellist1-image {
+
+    padding: 20px 12px;
+  }
+
+}
+
+
+/* =========================================
+              SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .laravellist1-heading {
+
+    font-size: 1.35rem;
+  }
+
+
+  .laravellist1-image {
+
+    padding: 15px 10px;
+  }
+
+}

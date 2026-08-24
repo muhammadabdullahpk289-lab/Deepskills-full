@@ -1,0 +1,164 @@
+.process {
+  width: 100%;
+  min-height: 430px;
+  background: #8C2636;
+  color: white;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* LEFT CONTENT */
+
+.process-content {
+  width: 64%;
+  padding: 45px 40px;
+  animation: moveRight 1s linear; 
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-500px); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 9;
+  }
+}
+
+.process-content h2 {
+  font-size: 38px;
+  margin: 0 0 30px;
+  font-weight: 700;
+}
+
+.process-content p {
+  font-size: 17px;
+  color: #C9B4B2;
+  line-height: 1.55;
+  margin-bottom: 38px;
+}
+
+.process-content strong {
+  font-weight: 900;
+  color: white;
+}
+
+
+/* RIGHT IMAGE */
+
+.process-image {
+  width: 36%;
+  background-image: url(../../assets/Home-images/ChatGPT\ Image\ Aug\ 17\,\ 2026\,\ 07_06_20\ PM.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  animation: grow 1.5s ease-in-out alternate;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0); 
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 9; 
+  }
+}
+
+.process-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  opacity: 0.65;
+}
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .process-content {
+    width: 60%;
+
+    padding: 45px 35px;
+  }
+
+  .process-content h2 {
+    font-size: 28px;
+  }
+
+  .process-content p {
+    font-size: 15px;
+  }
+
+  .process-image {
+    width: 40%;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .process {
+    display: block;
+
+    min-height: auto;
+  }
+
+
+  .process-content {
+    width: 100%;
+
+    padding: 40px 25px 120px;
+  }
+
+
+  .process-content h2 {
+    font-size: 26px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .process-content p {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+  }
+
+
+  .process-image {
+    width: 100%;
+
+    height: 280px;
+  }
+
+
+  .process-btn {
+    bottom: 20px;
+
+    font-size: 16px;
+
+    padding: 14px 30px;
+  }
+
+}

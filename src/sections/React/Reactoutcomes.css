@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.reactoutcomes-wrapper {
+  --reactoutcomes-bg: #111311;
+  --reactoutcomes-green: #6bbf3f;
+  --reactoutcomes-text-muted: #cfcfcf;
+
+  background: radial-gradient(ellipse at center, #1a2410 0%, #0d1208 55%, #05080a 100%);
+  font-family: "Poppins", sans-serif;
+  padding: 34px 20px 30px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.reactoutcomes-wrapper * {
+  box-sizing: border-box;
+}
+
+.reactoutcomes-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--reactoutcomes-green);
+  margin: 0 0 8px 0;
+}
+
+.reactoutcomes-subheading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #D2D2D1;
+  margin: 0 0 20px 0;
+}
+
+.reactoutcomes-image {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.reactoutcomes-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.reactoutcomes-footer {
+  margin: 20px auto 0 auto;
+  max-width: 480px;
+  font-size:1   rem;
+  font-weight: 500;
+  color: var(--reactoutcomes-text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 560px) {
+  .reactoutcomes-heading {
+    font-size: 1.3rem;
+  }
+}

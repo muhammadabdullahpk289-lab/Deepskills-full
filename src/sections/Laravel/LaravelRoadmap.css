@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+
+/* =========================================
+        LARAVEL ROADMAP
+========================================= */
+
+.laravelroadmap-wrapper {
+  --lrm-bg: #000000;
+  --lrm-cyan: #03e4fe;
+
+  width: 100%;
+
+  background: var(--lrm-bg);
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 40px 20px 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+        GLOBAL BOX SIZING
+========================================= */
+
+.laravelroadmap-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+            HEADING
+========================================= */
+
+.laravelroadmap-heading {
+  text-align: center;
+
+  font-size: 60px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: #ffffff;
+
+  margin: 0 0 24px;
+}
+
+
+/* =========================================
+          HIGHLIGHT
+========================================= */
+
+.laravelroadmap-highlight {
+  color: var(--lrm-cyan);
+}
+
+
+/* =========================================
+            IMAGE
+========================================= */
+
+.laravelroadmap-image {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.laravelroadmap-image img {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+             TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .laravelroadmap-wrapper {
+    padding: 35px 18px 0;
+  }
+
+  .laravelroadmap-heading {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/* =========================================
+             MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .laravelroadmap-wrapper {
+    padding: 30px 12px 0;
+  }
+
+  .laravelroadmap-heading {
+    font-size: 32px;
+
+    margin-bottom: 18px;
+  }
+
+}
+
+
+/* =========================================
+          SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .laravelroadmap-wrapper {
+    padding: 25px 10px 0;
+  }
+
+  .laravelroadmap-heading {
+    font-size: 27px;
+
+    margin-bottom: 15px;
+  }
+
+}

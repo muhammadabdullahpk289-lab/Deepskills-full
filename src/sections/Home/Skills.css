@@ -1,0 +1,232 @@
+.skills {
+  width: 100%;
+  min-height: 450px;
+  background: #050505;
+  color: white;
+  padding: 70px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+
+/* LEFT SIDE */
+
+.skills-left {
+  position: relative;
+  border-right: 1px solid #8f233d;
+  height: 220px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+.skills-left h2 {
+  font-size: 48px;
+  line-height: 0.95;
+  font-family: "Asimovian", sans-serif;
+  margin: 20px 0;
+}
+
+.skills-left h2 span {
+  font-size: 110px;
+}
+
+.skills-left p {
+  font-size: 20px;
+  color: #bdbdbd;
+}
+
+
+/* QUESTION MARK */
+
+.question-mark {
+  position: absolute;
+  right: 150px;
+  top: 0;
+  font-size: 230px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-text-stroke: 2px #444;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px); 
+  }
+  100% {
+    transform: translateY(0px);   
+  }
+}
+
+/* RIGHT SIDE */
+
+.skills-right {
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px 60px;
+  align-content: center;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 5px 5px;
+  border-radius: 15px;
+}
+
+.skill-item:hover{
+    border: 1px solid none;
+    border-radius: 15px;
+    padding: 5px 5px;
+     background:
+    linear-gradient(#111, #111) padding-box,
+    linear-gradient(90deg, #8f2940, #e94b68) border-box;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+.skill-item span {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e34b68;
+  color: #050505;
+  font-weight: bold;
+}
+
+.skill-item p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* BOTTOM TEXT */
+
+.skills-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.skills-bottom p {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.skills-bottom strong {
+  color: #e34b68;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .skills {
+    padding: 40px 5%;
+  }
+
+  .skills-left h2 {
+    font-size: 40px;
+  }
+
+  .skills-left h2 span {
+    font-size: 65px;
+  }
+
+  .question-mark {
+    right: 50px;
+  }
+
+  .skills-right {
+    padding-left: 40px;
+    gap: 30px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .skills {
+    display: block;
+
+    padding: 40px 25px 100px;
+  }
+
+
+  .skills-left {
+    border-right: none;
+
+    border-bottom: 1px solid #8f233d;
+
+    padding: 0 0 30px;
+
+    text-align: center;
+  }
+
+
+  .skills-left h2 {
+    font-size: 35px;
+  }
+
+
+  .skills-left h2 span {
+    font-size: 60px;
+  }
+
+
+  .question-mark {
+    display: none;
+  }
+
+
+  .skills-right {
+    padding: 35px 0;
+
+    display: block;
+  }
+
+
+  .skill-item {
+    margin-bottom: 25px;
+  }
+
+
+  .skill-item p {
+    font-size: 15px;
+  }
+
+
+  .skills-bottom {
+    bottom: 25px;
+
+    padding: 0 20px;
+  }
+
+
+  .skills-bottom p {
+    font-size: 20px;
+  }
+
+}

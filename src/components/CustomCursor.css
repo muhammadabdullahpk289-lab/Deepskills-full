@@ -1,0 +1,120 @@
+/* =====================================================
+   CUSTOM CURSOR
+===================================================== */
+
+.custom-cursor {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #fff;
+
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+
+  z-index: 2147483647 !important;
+
+  transition:
+    width 0.15s ease,
+    height 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+
+  will-change: transform;
+
+}
+
+
+/* =====================================================
+   HOVER STATE
+===================================================== */
+
+.custom-cursor.hover {
+
+  width: 30px;
+  height: 30px;
+
+  border-color: #fff;
+
+}
+
+
+/* =====================================================
+   CLICK STATE
+===================================================== */
+
+.custom-cursor.click {
+
+  width: 15px;
+  height: 15px;
+
+}
+
+
+/* =====================================================
+   VIDEO / MODAL KE UPAR
+===================================================== */
+
+.video-overlay {
+
+  z-index: 999999 !important;
+
+}
+
+
+.video-modal {
+
+  z-index: 1000000 !important;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+  z-index: 9999;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .custom-cursor {
+
+    width: 18px;
+    height: 18px;
+
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .custom-cursor {
+
+    width: 16px;
+    height: 16px;
+
+  }
+
+}

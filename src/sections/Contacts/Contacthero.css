@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+.contacthero-wrapper {
+  --contacthero-maroon: #7a1f2b;
+  --contacthero-text-muted: #d9c5c9;
+
+  position: relative;
+
+  background-color: #0a0a0a;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 50px 40px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  margin-top: -100px;
+}
+
+
+.contacthero-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.contacthero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(5, 5, 5, 0.55);
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.contacthero-grid {
+  position: relative;
+
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+
+  max-width: 1150px;
+
+  margin: 100px auto 0;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT CARD
+========================================= */
+
+.contacthero-card {
+  width: 100%;
+
+  height: 100%;
+
+  background: rgba(122, 31, 43, 0.55);
+
+  border-radius: 16px;
+
+  padding: 40px 36px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.contacthero-heading {
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  color: #ffffff;
+
+  line-height: 1.25;
+
+  margin: 0 0 30px 0;
+}
+
+
+/* =========================================
+   CONTENT BLOCK
+========================================= */
+
+.contacthero-block {
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.contacthero-label {
+  font-size: 1.15rem;
+
+  font-weight: 800;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 6px;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.contacthero-icon {
+  color: #e05a6a;
+
+  font-size: 1.1rem;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.contacthero-text {
+  font-size: 0.92rem;
+
+  font-weight: 500;
+
+  color: var(--contacthero-text-muted);
+
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.contacthero-desc {
+  font-size: 0.88rem;
+
+  font-weight: 400;
+
+  color: var(--contacthero-text-muted);
+
+  line-height: 1.7;
+
+  margin: 24px 0 0 0;
+}
+
+
+.contacthero-desc strong {
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   RIGHT INFO
+========================================= */
+
+.contacthero-info {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 20px 10px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+
+/* =========================================
+   INFO BLOCK
+========================================= */
+
+.contacthero-info-block {
+  margin-bottom: 24px;
+}
+
+
+/* =========================================
+   INFO ICON
+========================================= */
+
+.contacthero-info-icon {
+  margin-bottom: 16px;
+}
+
+
+/* =========================================
+   INFO SUBTITLE
+========================================= */
+
+.contacthero-info-sub {
+  font-size: 0.78rem;
+
+  font-weight: 500;
+
+  color: #9a8f92;
+
+  margin: 0 0 8px 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   INFO TITLE
+========================================= */
+
+.contacthero-info-title {
+  font-size: 1.1rem;
+
+  font-weight: 800;
+
+  color: #ffffff;
+
+  margin: 0 0 14px 0;
+}
+
+
+/* =========================================
+   LARGE TITLE
+========================================= */
+
+.contacthero-info-title-lg {
+  font-size: 1.15rem;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   ADDRESS
+========================================= */
+
+.contacthero-info-address {
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  color: #ffffff;
+
+  line-height: 1.5;
+
+  margin: 0 0 14px 0;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.contacthero-divider {
+  height: 1px;
+
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  margin: 24px 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contacthero-wrapper {
+    padding: 50px 30px;
+  }
+
+
+  .contacthero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    align-items: stretch;
+  }
+
+
+  .contacthero-card {
+    height: auto;
+  }
+
+
+  .contacthero-info {
+    height: auto;
+
+    padding: 20px 10px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contacthero-wrapper {
+    padding: 35px 20px;
+
+    background-attachment: scroll;
+  }
+
+
+  .contacthero-grid {
+    margin-top: 70px;
+
+    gap: 30px;
+  }
+
+
+  .contacthero-heading {
+    font-size: 1.6rem;
+  }
+
+
+  .contacthero-card {
+    padding: 28px 24px;
+    margin-top: 50px;
+    border-radius: 14px;
+  }
+
+
+  .contacthero-info {
+    padding: 15px 5px;
+  }
+
+
+  .contacthero-label {
+    font-size: 1rem;
+  }
+
+
+  .contacthero-text {
+    font-size: 0.88rem;
+  }
+
+
+  .contacthero-info-title {
+    font-size: 1rem;
+  }
+
+
+  .contacthero-info-address {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .contacthero-wrapper {
+    padding: 30px 15px;
+  }
+
+
+  .contacthero-grid {
+    margin-top: 60px;
+  }
+
+
+  .contacthero-card {
+    padding: 24px 20px;
+  }
+
+
+  .contacthero-heading {
+    font-size: 1.45rem;
+  }
+
+}

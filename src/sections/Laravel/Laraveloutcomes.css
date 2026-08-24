@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.lo2-wrapper {
+  --lo2-bg: #0c0812;
+  --lo2-cyan: #22e0f0;
+  --lo2-card-bg: #f0eeee;
+  --lo2-text-dark: #1a1a1a;
+
+  background-color: var(--lo2-bg);
+  background-image:
+    linear-gradient(rgba(34, 224, 240, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 224, 240, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 12% 25%, rgba(34, 224, 240, 0.14) 0%, transparent 35%),
+    radial-gradient(circle at 85% 70%, rgba(34, 224, 240, 0.10) 0%, transparent 40%);
+  background-size: 42px 42px, 42px 42px, 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  background-repeat: repeat, repeat, no-repeat, no-repeat;
+
+  font-family: "Poppins", sans-serif;
+  padding: 50px 50px 60px 50px;
+  box-sizing: border-box;
+}
+
+.lo2-wrapper * {
+  box-sizing: border-box;
+}
+
+.lo2-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--lo2-cyan);
+  margin: 0 0 36px 0;
+}
+
+.lo2-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.lo2-card {
+  background: var(--lo2-card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.lo2-image {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #d9d5d5;
+  overflow: hidden;
+}
+
+.lo2-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lo2-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #d4d0d0,
+    #d4d0d0 10px,
+    #e4e0e0 10px,
+    #e4e0e0 20px
+  );
+}
+
+.lo2-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--lo2-text-dark);
+  line-height: 1.4;
+  padding: 16px 18px 14px 18px;
+  flex-grow: 1;
+}
+
+.lo2-divider {
+  height: 1px;
+  background: #cfcaca;
+  margin: 0 18px 16px 18px;
+}
+
+@media (max-width: 900px) {
+  .lo2-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .lo2-grid {
+    grid-template-columns: 1fr;
+  }
+  .lo2-heading {
+    font-size: 1.7rem;
+  }
+}

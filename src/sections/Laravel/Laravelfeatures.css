@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+        LARAVEL FEATURES SECTION
+========================================= */
+
+.laravelfeatures-wrapper {
+
+  --lf-bg: #07050a;
+
+  --lf-cyan: #03e4fe;
+
+  --lf-card-bg: #0d0b10;
+
+  --lf-text-light: #ffffff;
+
+  --lf-text-muted: #918c98;
+
+
+  /* =========================================
+              DARK BACKGROUND
+  ========================================= */
+
+  background-color: var(--lf-bg);
+
+  background-image:
+
+    /* DARK GRID */
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(3, 228, 254, 0.025) 1px,
+      transparent 1px
+    ),
+
+    /* LEFT GLOW */
+    radial-gradient(
+      circle at 12% 25%,
+      rgba(5, 91, 100, 0.08) 0%,
+      transparent 35%
+    ),
+
+    /* RIGHT GLOW */
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(3, 228, 254, 0.055) 0%,
+      transparent 40%
+    );
+
+
+  background-size:
+    42px 42px,
+    42px 42px,
+    100% 100%,
+    100% 100%;
+
+
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0;
+
+
+  background-repeat:
+    repeat,
+    repeat,
+    no-repeat,
+    no-repeat;
+
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 60px 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+              BOX SIZING
+========================================= */
+
+.laravelfeatures-wrapper * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+                HEADING
+========================================= */
+
+.laravelfeatures-heading {
+
+  text-align: center;
+
+  font-size: 2.2rem;
+
+  font-weight: 800;
+
+  color: var(--lf-cyan);
+
+  margin: 0 0 40px 0;
+}
+
+
+/* =========================================
+                  GRID
+========================================= */
+
+.laravelfeatures-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+  max-width: 1150px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+                  CARD
+========================================= */
+
+.laravelfeatures-card {
+
+  background: var(--lf-card-bg);
+
+  border: 1px solid rgba(255, 255, 255, 0.045);
+
+  border-radius: 14px;
+
+  padding: 32px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+              CARD HOVER
+========================================= */
+
+.laravelfeatures-card:hover {
+
+  background: rgba(3, 228, 254, 0.055);
+
+  border-color: rgba(3, 228, 254, 0.25);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(3, 228, 254, 0.08);
+}
+
+
+/* =========================================
+                ICON WRAP
+========================================= */
+
+.laravelfeatures-icon-wrap {
+
+  position: relative;
+
+  margin-bottom: 16px;
+}
+
+
+/* =========================================
+                  ICON
+========================================= */
+
+.laravelfeatures-icon {
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: rgba(3, 228, 254, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--lf-cyan);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================
+              ICON HOVER
+========================================= */
+
+.laravelfeatures-card:hover
+.laravelfeatures-icon {
+
+  background: var(--lf-cyan);
+
+  color: #071014;
+
+  transform: scale(1.08);
+}
+
+
+/* =========================================
+                 NUMBER
+========================================= */
+
+.laravelfeatures-number {
+
+  position: absolute;
+
+  top: -4px;
+
+  right: -6px;
+
+  background: var(--lf-cyan);
+
+  color: #071014;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 2px solid var(--lf-card-bg);
+}
+
+
+/* =========================================
+                  TITLE
+========================================= */
+
+.laravelfeatures-title {
+
+  font-size: 1.02rem;
+
+  font-weight: 700;
+
+  color: var(--lf-text-light);
+
+  margin-bottom: 6px;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+/* TITLE HOVER */
+
+.laravelfeatures-card:hover
+.laravelfeatures-title {
+
+  color: var(--lf-cyan);
+}
+
+
+/* =========================================
+                SUBTITLE
+========================================= */
+
+.laravelfeatures-subtitle {
+
+  font-size: 0.82rem;
+
+  font-weight: 500;
+
+  color: var(--lf-text-muted);
+
+  transition:
+    color 0.3s ease;
+}
+
+
+/* SUBTITLE HOVER */
+
+.laravelfeatures-card:hover
+.laravelfeatures-subtitle {
+
+  color: #b8eaf0;
+}
+
+
+/* =========================================
+                  TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .laravelfeatures-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+                  MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .laravelfeatures-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .laravelfeatures-heading {
+
+    font-size: 1.7rem;
+  }
+}

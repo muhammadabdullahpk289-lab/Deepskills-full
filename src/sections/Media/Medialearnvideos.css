@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.medialearnvideos-wrapper {
+  --mlv-bg: #0a0a0a;
+  --mlv-maroon: #8a1f2f;
+  --mlv-text-muted: #b8b3b8;
+
+  background: var(--mlv-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 45px 40px 60px 40px;
+  box-sizing: border-box;
+}
+
+.medialearnvideos-wrapper * {
+  box-sizing: border-box;
+}
+
+.medialearnvideos-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+}
+
+.medialearnvideos-subtext {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--mlv-text-muted);
+  max-width: 620px;
+  margin: 0 auto 36px auto;
+  line-height: 1.6;
+}
+
+.medialearnvideos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.medialearnvideos-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.medialearnvideos-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--mlv-maroon);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+.medialearnvideos-image:hover {
+  box-shadow: 0 25px 50px rgba(138, 31, 47, 0.4);
+}
+
+.medialearnvideos-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.medialearnvideos-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #1c1c1c,
+    #1c1c1c 10px,
+    #262626 10px,
+    #262626 20px
+  );
+}
+
+.medialearnvideos-caption {
+  margin-top: 16px;
+  background: var(--mlv-maroon);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .medialearnvideos-grid {
+    grid-template-columns: 1fr;
+  }
+  .medialearnvideos-heading {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.list1-wrapper {
+  --list1-bg: #0a0a0a;
+  --list1-purple: #9b3dfb;
+  --list1-row-bg: #161616;
+  --list1-row-bg-alt: #1c1c1c;
+  --list1-text-light: #ffffff;
+  --list1-green: #2ecc71;
+  --list1-red: #e74c3c;
+
+  background: var(--list1-bg);
+  font-family: "Poppins", sans-serif;
+  padding: 50px 50px 60px 50px;
+  box-sizing: border-box;
+}
+
+.list1-wrapper * {
+  box-sizing: border-box;
+}
+
+.list1-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--list1-purple);
+  margin: 0 0 34px 0;
+}
+
+.list1-table {
+  max-width: 950px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--list1-row-bg);
+}
+
+.list1-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.list1-row:nth-child(even) {
+  background: var(--list1-row-bg-alt);
+}
+
+.list1-row-header {
+  background: #1e1e1e;
+  padding: 22px 0;
+}
+
+.list1-row:not(.list1-row-header) {
+  padding: 18px 0;
+}
+
+.list1-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  font-size: 0.92rem;
+  color: var(--list1-text-light);
+}
+
+.list1-cell-feature {
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.list1-row-header .list1-cell-feature {
+  font-weight: 700;
+}
+
+.list1-cell-brand {
+  font-weight: 700;
+  gap: 8px;
+}
+
+.list1-logo-badge {
+  background: #7a1f2b;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list1-logo-text {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logo1{
+    width: 110px;
+}
+
+.list1-yt-badge {
+  width: 34px;
+  height: 24px;
+  border-radius: 6px;
+  background: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list1-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.list1-icon-yes {
+  background: var(--list1-green);
+}
+
+.list1-icon-no {
+  background: var(--list1-red);
+}
+
+@media (max-width: 700px) {
+  .list1-heading {
+    font-size: 1.7rem;
+  }
+  .list1-cell {
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+  .list1-logo-text {
+    display: flex;
+  }
+  .logo1{
+    width: 70px;
+
+}
+}
