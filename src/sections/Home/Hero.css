@@ -481,9 +481,7 @@
  
     visibility: visible !important; 
  
-    transform: none !important; 
- 
-    animation: none !important; 
+    animation: flt 5s ease-in-out infinite; 
   } 
  
  
